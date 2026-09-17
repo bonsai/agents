@@ -2,6 +2,57 @@
 
 A comprehensive collection of specialized AI agents designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
 
+## Thinking Types
+
+Agents can also be equipped with reusable **thinking types**. These are not personas; they are patterns for generating questions and analyzing a subject from different angles.
+
+| Thinker | Type | Core operation | Guiding question |
+|---|---|---|---|
+| **Plato** | Essence | Abstract from phenomena toward essence | What is X essentially? |
+| **Kant** | Condition | Trace conditions of possibility | How is X possible? |
+| **Wittgenstein** | Language | Examine use and context | How is the word X used? |
+| **Foucault** | Genealogy | Trace historical formation and institutions | How did X become what it is? |
+| **Azuma** | Connection | Examine networks, relations, and environments | What is X connected to? |
+| **Sun Tzu** | Strategy | Read situation, terrain, actors, timing, and resources | How can the objective be achieved in this situation? |
+
+These thinking types can be composed into a research loop:
+
+```text
+PLATO
+  What is it?
+    ↓
+KANT
+  How is it possible?
+    ↓
+WITTGENSTEIN
+  How is it used?
+    ↓
+FOUCAULT
+  How did it become this way?
+    ↓
+AZUMA
+  What is it connected to?
+    ↓
+SUN TZU
+  How should we act?
+```
+
+### Agent configuration
+
+Thinking types should be treated as reusable reasoning modes rather than separate personalities:
+
+```yaml
+thinking:
+  - plato: essence
+  - kant: condition
+  - wittgenstein: language
+  - foucault: genealogy
+  - azuma: connection
+  - sunzi: strategy
+```
+
+An agent may use one thinking type for a focused task or compose several types for research, planning, and decision support.
+
 ## 📥 Installation
 
 1. **Download this repository:**
@@ -16,7 +67,7 @@ A comprehensive collection of specialized AI agents designed to accelerate and e
    
    Or manually copy all the agent files to your `~/.claude/agents/` directory.
 
-3. **Restart Claude Code** to load the new agents.
+3. **Restart Claude Code to load the new agents.**
 
 ## 🚀 Quick Start
 
