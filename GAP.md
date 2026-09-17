@@ -4,50 +4,7 @@
 
 AIエージェントの「界面」を、単なるチャットUIではなく、**人間・エージェント・他エージェント・ツール・データ・環境を接続する定義面**として調査する。
 
-## 現状の共通要素
-
-現在のエージェント設計では、少なくとも次の要素が分離されつつある。
-
-- **Identity** — agentは何者か
-- **Instruction** — 何をするか / 何をしないか
-- **Persona** — どういう存在として振る舞うか
-- **Skill** — 何ができるか
-- **Tool** — 具体的に何を実行できるか
-- **Memory** — 何を保持するか
-- **Workflow** — どういう手順で動くか
-- **Model** — 推論を担うモデル
-- **Context** — 何を知った状態で判断するか
-- **Permission / Policy** — 何を実行してよいか
-- **Evaluation** — どう評価するか
-- **Interface** — 外部からどう呼び出すか
-
-AgentDefの2026年ドラフトも identity / instructions / memory / tools / workflows / skills / runtime configuration / orchestration / evaluation を共通構成要素として整理している。 citeturn0search6
-
-## プロトコル上の界面
-
-### MCP
-
-**Agent ↔ Tool / Data** の界面。
-
-ツールやリソースを標準化して、エージェントが外部機能・データに接続する層。
-
-### A2A
-
-**Agent ↔ Agent** の界面。
-
-A2AではAgent Cardによって identity / capabilities / skills / interaction requirements などを発見可能にする。Agent Skillにはid、name、description、tags、examples、input/output modesなどが含まれる。 citeturn0search1turn0search2
-
-### Human Interface
-
-**Human ↔ Agent** の界面。
-
-チャットだけではなく、自然言語、構造化入力、ファイル、画像、音声、UIイベントなどを含む。
-
-## GAP 1 — Agentの「人格」と「能力」が混ざっている
-
-Persona / Identity / Skill / Tool が一つのsystem promptに埋め込まれることが多い。
-
-必要なのは、
+## GAP 1 — Agentの人格と能力の分離
 
 ```text
 WHO   = Identity / Persona
@@ -58,13 +15,9 @@ MAY   = Policy / Permission
 SHOW  = Interface / Output
 ```
 
-という分離。
+## GAP 2 — SkillとToolの境界
 
-## GAP 2 — 「Skill」と「Tool」の境界
-
-Microsoftの整理では、Agentはrequestをオーケストレーションし、Skillは必要時にロードされるworkflow/capability、Toolはagentが呼び出す具体的なfunctionとして分けられている。 citeturn0search3
-
-したがって、bonsai/agentsでは **Skill = 意味のある仕事単位、Tool = 実行単位** として定義できる可能性がある。
+**Skill = 意味のある仕事単位、Tool = 実行単位** として定義する可能性がある。
 
 ```text
 Agent
@@ -75,11 +28,11 @@ Agent
      └─ executable function
 ```
 
-## GAP 3 — 「思考型」がAgent Interfaceに入っていない
+## GAP 3 — Thinking Interface
 
-今回定義した6つの思考型を、Personaではなく **Thinking Interface** として扱う。
+Thinking TypeをPersonaではなく、**どう考えるかを切り替える界面**として扱う。
 
-| Thinking Type | 操作 |
+| Thinking Type | 基本操作 |
 |---|---|
 | Plato / essence | 本質を抽出する |
 | Kant / condition | 成立条件を問う |
@@ -88,13 +41,9 @@ Agent
 | Azuma / connection | 接続・環境を捉える |
 | Sun Tzu / strategy | 状況・配置・行動を考える |
 
-これは「誰になるか」ではなく、**どう考えるかを切り替える界面**として扱う。
-
 ## GAP 4 — Agent Cardが能力中心
 
-A2AのAgent Cardはagent discoveryのための identity / capabilities / skills / interfaces を記述するが、**思考様式・価値観・判断手順・根拠の扱い方**まで標準的には十分表現しない。 citeturn0search2turn0search13
-
-候補として、bonsai Agent Definitionに以下を追加する。
+Agent discoveryの定義には、identity / capabilities / skills / interfacesだけでなく、**思考様式・判断手順・根拠の扱い方**を表現する余地がある。
 
 ```yaml
 thinking:
@@ -107,11 +56,7 @@ thinking:
     - strategy
 ```
 
-## GAP 5 — Agent ↔ Human と Agent ↔ Agent の界面が分離している
-
-A2AはAgent-to-Agent、MCPはAgent-to-Toolという役割分担が明確になっている。 citeturn0search1
-
-しかし、Humanが複数Agentを観察・比較・介入・承認する **Human ↔ Agent Community** の界面は別途必要。
+## GAP 5 — Human ↔ Agent ↔ Agent ↔ Tool
 
 ```text
              Human
@@ -127,26 +72,67 @@ A2AはAgent-to-Agent、MCPはAgent-to-Toolという役割分担が明確にな�
       Tools   Agents   Data
 ```
 
+Humanが複数Agentを観察・比較・介入・承認する **Human ↔ Agent Community** の界面が必要。
+
 ## GAP 6 — Agent Communityの統治
 
-複数Agentが協働する場合、単なるtask delegationだけでは不足する可能性がある。
+複数Agentが協働する場合、membership / role / deliberation / dissent / human escalation / decision provenance / audit / replay / permission が必要になる。
 
-調査対象として以下を追加する。
+## GAP 7 — Environment Interface
 
-- membership
-- role
-- deliberation
-- dissent
-- human escalation
-- decision provenance
-- audit / replay
-- permission
+落合陽一の「計算機自然」は、人・機械・物質世界・仮想世界の間に多様な選択肢を生む世界像として位置づけられている。研究室も人・計算機・自然の間で新たな文化的価値を実装することを掲げている。これはAgentを孤立した人格としてではなく、**人間・計算機・物理環境・データ環境の境界で動く存在**として考える材料になる。 citeturn0search2turn0search4
 
-2026年の研究でも、agent interoperability protocolだけでは voting、dissent preservation、完全なdeliberationなどのgovernance primitivesが不足するという分析がある。 citeturn0academia25
+```text
+Agent
+ ├─ Thinking
+ ├─ Knowledge
+ ├─ Tools
+ └─ Environment
+       ├─ human
+       ├─ physical world
+       ├─ digital world
+       └─ other agents
+```
+
+したがって **Environment Interface** を独立した定義として検討する。
+
+## GAP 8 — Implementation Interface
+
+安野貴博の公式発信では、テクノロジーを「できなかったことを、できるようにする方法」と捉え、政治・行政の透明化・効率化や参加のための技術利用を掲げている。ここからAgent設計上、**問い・問題を仕様、実装、運用、改善へ変換する界面**を抽出できる。これは特定の政策評価ではなく、実装プロセスの設計パターンとして扱う。 citeturn0search1
+
+```text
+Question
+   ↓
+Problem
+   ↓
+Specification
+   ↓
+Implementation
+   ↓
+Operation
+   ↓
+Feedback
+   ↺
+```
+
+この型を **Implementation Interface** と仮称する。
+
+## 思考型の拡張仮説
+
+| Thinking / Operating Type | 基本操作 |
+|---|---|
+| Plato / essence | 本質を抽出する |
+| Kant / condition | 成立条件を問う |
+| Wittgenstein / language | 用法・文脈を調べる |
+| Foucault / genealogy | 成立過程・制度を追う |
+| Azuma / connection | 接続・環境を捉える |
+| Sun Tzu / strategy | 状況・配置・行動を考える |
+| Ochiai / environment | 人・機械・物質・データの境界を再構成する |
+| Anno / implementation | 問題を仕様・実装・運用へ変換する |
+
+※「Ochiai」「Anno」は本人の思想を完全に表現する分類名ではなく、公開されている活動・概念からAgent設計のために抽出した**作業仮説**である。
 
 ## 暫定モデル
-
-bonsai/agentsでは、Agentを次のように定義する。
 
 ```text
 AGENT
@@ -159,6 +145,7 @@ AGENT
 ├── Skill         WHAT-IT-CAN-DO
 ├── Tool          WHAT-IT-CAN-EXECUTE
 ├── Workflow      HOW-IT-ACTS
+├── Environment   WHERE-IT-ACTS
 ├── Policy        WHAT-IT-MAY-DO
 ├── Interface     HOW-OTHERS-TALK-TO-IT
 └── Evaluation    HOW-WE-KNOW-IT-WORKS
@@ -166,20 +153,20 @@ AGENT
 
 ## 次に調べること
 
-1. Agent CardにThinking / Policy / Evaluationを追加できるか
+1. Agent CardにThinking / Environment / Policy / Evaluationを追加できるか
 2. `AGENTS.md` / `SKILL.md` / `PERSONA.md` / `Agent Card` の責務を比較する
 3. MCP / A2A / AG-UI / A2UIの界面を整理する
-4. Human ↔ Agent ↔ Agent ↔ Tool の共通Interaction Schemaを作る
+4. Human ↔ Agent ↔ Agent ↔ Tool ↔ Environment の共通Interaction Schemaを作る
 5. `thinking.yaml` の最小仕様を作る
-6. bonsai/agentsの各Agentをこの定義にマッピングする
+6. `environment.yaml` の最小仕様を作る
+7. bonsai/agentsの各Agentをこの定義にマッピングする
+8. 「思考型」と「実行型」を分離する
 
 ## 参考
 
-- Google Cloud: AI agentのrole / persona / memory / tools / modelの整理。 citeturn0search0
-- Microsoft: Agent / Skill / Toolの責務分離。 citeturn0search3
-- A2A: Agent discovery / Agent Card / Agent Skill / Agent Interface。 citeturn0search1turn0search2
-- AgentDef: framework-agnosticなAgent Definitionの試み。 citeturn0search6
+- 落合陽一公式: Digital Nature / Artist Statement。 citeturn0search2turn0search4
+- 安野貴博 / チームみらい公式: テクノロジーを用いた問題解決・参加の考え方。 citeturn0search1
 
 ---
 
-**仮説:** Agentの本当の「界面」はUIではなく、**定義（Definition）と実行（Runtime）の境界**にある。さらに、その上に「思考型」を差し込むことで、同じAgent/Skillを異なる認識論・分析方法で実行できる。
+**仮説:** Agentの本当の「界面」はUIではなく、**定義（Definition）と実行（Runtime）の境界**にある。その上に「思考型」、横に「環境」、下流に「実装変換」を差し込むことで、Agentを単なるPersonaやTool wrapperではなく、**問いを受け、世界を認識し、考え、実装し、環境へ作用する存在**として定義できる。
