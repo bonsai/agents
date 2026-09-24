@@ -1,0 +1,1665 @@
+# Tasks (triage.md 生成)
+
+> 生成: 2026-09-10 11:48 | 元: data/triage.db
+## 🔴 今やる (11)
+- [ ] `cdpgpt#1` 実プロファイルが --remote-debugging-port を bind しない  bug
+- [ ] `cdpgpt#2` コピープロファイルでは Cookie が復号できない（app-bound encryption）  bug
+- [ ] `stock-bqml#18` gold: arena_dow_signal 重複除去 → ga_signals完全復帰  bug,enhancement
+- [ ] `stock-bqml#21` ops: pipeline構築時のエラー履歴と教訓  bug,documentation
+- [ ] `voice-bbs-web#17` FE: GitHub Actions の React PoC デプロイ失敗を調査・修正  bug,frontend
+- [ ] `voice-bbs-web#18` Actions: fe ブランチの React PoC workflow が startup failure / jobs=0 で実行されない  bug,kilo-duplicate,kilo-triaged,ci
+- [ ] `voice_bbs#7` マイクチェックがランディングページで動作しない  bug
+- [ ] `voice_bbs#8` shiritori起動時にInternal Server Error  bug
+- [ ] `voice_bbs#9` API upload認証: Bearer token未送信で401  bug
+- [ ] `voice_bbs#10` HEExテンプレート: ネストされた二重引用符でパースエラー  bug
+- [ ] `wiki#287` BQML パイプライン定常運用  w0.7
+
+## 🟡 近いうち (354)
+- [ ] `DevSteps#1` Reconstruct documentation: Agent instructions and Human explanation  
+- [ ] `DevSteps#2` ADR: Agent instructions / Human guide / README index separation  kilo-duplicate,kilo-triaged
+- [ ] `TANGOO#1` #01 Product definition — あらゆる言葉をクイズで覚える  
+- [ ] `TANGOO#2` #02 Competitive research — vocabulary / quiz / learning apps  
+- [ ] `TANGOO#3` #03 UX/UI — PLAN不要のSprint UX  
+- [ ] `TANGOO#4` #04 Frontend stack evaluation — Svelte / HTMX / Vue / TypeScript  
+- [ ] `TANGOO#5` #05 Backend stack evaluation — Ruby / OCaml / TypeScript  
+- [ ] `TANGOO#6` #06 Data ontology — Vocabulary / Quiz / Attempt / LearningLog  
+- [ ] `TANGOO#7` #07 Metadata engine — quiz item metadata manipulation  
+- [ ] `TANGOO#8` #08 Sprint engine — 10問を考えずに回す  
+- [ ] `TANGOO#9` #09 Quiz UX — ぬるぬる覚えるサーキット  
+- [ ] `TANGOO#10` #10 Learning Log — 実際にやったことを全量保存  
+- [ ] `TANGOO#11` #11 Content model — JSONを教材・クイズ・計画データへ進化  
+- [ ] `TANGOO#12` #12 Learning progression — 計画に沿ったQuiz生成  
+- [ ] `TANGOO#13` #13 ML — 次に出す言葉を学習ログから最適化  
+- [ ] `TANGOO#14` #14 Agent architecture — エージェンティック学習  
+- [ ] `TANGOO#15` #15 Agent tool contract — Quiz / Metadata / Log / Content tools  
+- [ ] `TANGOO#16` #16 Content acquisition — 英単語MVP dataset  
+- [ ] `TANGOO#17` #17 Game design — 学習をゲームにする  
+- [ ] `TANGOO#18` #18 SRS / forgetting model research  
+- [ ] `TANGOO#19` #19 API contract — content / quiz / log / progression  
+- [ ] `TANGOO#20` #20 Persistence — local-first LearningLog  
+- [ ] `TANGOO#21` #21 Agent framework spike — Mastra  kilo-triaged,kilo-duplicate
+- [ ] `TANGOO#22` #22 Agent framework spike — CAMEL  kilo-triaged,kilo-duplicate
+- [ ] `TANGOO#23` #23 Agent evaluation — Mastra vs CAMEL  kilo-triaged,kilo-duplicate
+- [ ] `TANGOO#24` #24 Quiz generation — metadata-driven question types  
+- [ ] `TANGOO#25` #25 Analytics — learning behavior dashboard  
+- [ ] `TANGOO#26` #26 PWA / offline — anywhere sprint  
+- [ ] `TANGOO#27` #27 Content expansion — 英語から「あらゆる言葉」へ  kilo-triaged,kilo-duplicate
+- [ ] `TANGOO#28` #28 Privacy / data ownership — LearningLogをユーザー資産にする  
+- [ ] `TANGOO#29` #29 Evaluation protocol — learning effectiveness  
+- [ ] `TANGOO#30` #30 Release architecture — TANGOO v1  
+- [ ] `amimono#1` WorkType: ドット絵 → 機械編みセーター製造データ  enhancement
+- [ ] `amimono#2` IR設計: Machine Independent Knitting IR を定義する  enhancement
+- [ ] `arrange-me#1` [MVP] 編曲シミュレーターの基本コンセプトとゲームループ  mvp / enhancement
+- [ ] `arrange-me#2` [MVP] Web Audio編曲エンジン — 8小節デモを再生する  mvp / kilo-triaged,kilo-duplicate
+- [ ] `arrange-me#3` [MVP] JSONで音楽世界を定義する  mvp
+- [ ] `arrange-me#4` [GAME] 3段階×3手法をゲームシステム化する  game
+- [ ] `arrange-me#5` [GAME] OR的スコアリング — 制約付き編曲最適化  game
+- [ ] `arrange-me#6` [PLAN] OR選択的ノベルゲームとして再設計する  plan
+- [ ] `arrange-me#7` [ONTOLOGY] 共通Music Event Ontologyを定義する  ontology
+- [ ] `arrange-me#8` [ENGINE] Choice → State → ScoreのORゲームエンジン  engine
+- [ ] `arrange-me#9` [SCENARIO] ARRANGER / DJ / PAの3職種ノベルMVP  scenario / kilo-triaged,kilo-duplicate
+- [ ] `arrange-me#10` [UI] ノベルUI — Scene / Dialogue / 3 Choice / Status  ui
+- [ ] `aw#1` Make soubi a TUI-driven Agentic Workflow surface  
+- [ ] `aw#2` aw: json2yaml on wf 変換コマンドを Go CLI として整備（TUI ではない）  
+- [ ] `aw#3` aw: repo topics メタデータ作成 workflow 完成（addTopics.aw）  
+- [ ] `aw#4` aw: UI(TUI)不採用・CLI 一本化（uiは不要ですね）  kilo-triaged,kilo-duplicate
+- [ ] `aw#5` aw: HTTP API 化（REST/JSON、CLI はクライアント）  
+- [ ] `aw#6` aw-api 実装: Cloud Run REST + DB キュー → gh aw run ディスパッチ（PoC）  kilo-triaged,kilo-duplicate
+- [ ] `aw#7` 配管デモ完了: URL→workflow→SVG生成→Pages更新→再描画（bonsai/patterns）  enhancement
+- [ ] `blueprint-agent#1` docs.a2z: 周辺ツールとの界面（差分・連携方式）を設計する  
+- [ ] `blueprint-agent#2` Wiki ingestion: chats / memo / raw をDBに飲み込み、ML→LLM→A2Zへ構造化する  
+- [ ] `blueprint-agent#3` Agent分業: Wiki Ingest / DB / ML / Local LLM / A2Z を専門エージェント化する  kilo-duplicate,kilo-triaged
+- [ ] `blueprint-agent#4` Agent 3層モデル: Memo＝記号化 / Blueprint＝構造化 / Orchestra＝組織化＝演奏  
+- [ ] `bon-anima#1` [REVAMP] Motion Ontology を中核に bon-anima を再設計する  revamp / ontology,revamp
+- [ ] `bon-anima#2` Deploy to GitHub Pages failed: Pages site not enabled (10 failures, 09-02 batch)  
+- [ ] `bonsai#1` docs: portfolio design system and visual refinement  
+- [ ] `bonsai#2` docs: migrate Gists to GitHub repositories  
+- [ ] `cdpgpt#3` WSL内 headless Chrome が 9222 を占有し混線  documentation
+- [ ] `cdpgpt#4` PowerShell Start-Process の引数スペース分割問題  documentation
+- [ ] `cdpgpt#5` Cloudflare チャレンジ（Just a moment...）突破  enhancement
+- [ ] `cdpgpt#6` 会話 DOM → markdown 化とリポジトリ保存  enhancement
+- [ ] `cli.js#2` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `cli.js#3` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `cli.js#4` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `cli.js#5` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `costume-generation#1` [ASSET] idol-produce連携用 Costume Asset Contract を定義する  asset / asset,integration
+- [ ] `costume-generation#2` [GENERATION] Gemini APIでファッション画像生成POCを実装する  generation / asset,generation,api
+- [ ] `costume-generation#3` [ONTOLOGY] Prompt / Parameter / Property / Asset による衣装オントロジを定義する  ontology / kilo-triaged,kilo-duplicate
+- [ ] `costume-generation#4` [ONTOLOGY] 衣装パーツ・身体パーツを分解して登録する  ontology / asset,kilo-triaged,kilo-duplicate,ontology
+- [ ] `dots#1` MCP実装: dots APIをAI/Agent向けインターフェースとして公開  enhancement,mcp,api
+- [ ] `emoji-shiritori#3` [Design] Emoji Shiritori 2.0 ゲーム設計・UI・ルール・データ構造  design / enhancement
+- [ ] `emoji-shiritori#4` [Design] Emoji Shiritori オントロジー設計・語彙とゲーム状態の意味モデル化  design / enhancement,kilo-triaged,kilo-duplicate
+- [ ] `emoji-shiritori#5` [Process] Issue Driven Development (IDD) を開発標準として定義  process / enhancement
+- [ ] `emoji-shiritori#6` [Product] Single Infinite Mode — コンボ数タイムアタックへ再設計  product / enhancement
+- [ ] `extreme-norikae#1` 現在地を自動取得し最寄り駅を出発地に設定  
+- [ ] `extreme-norikae#2` PLAN / RUN / VIEW モードの棲み分け  
+- [ ] `extreme-norikae#3` 簡易路線図表示とJSONデータ生成（西武池袋線→中央線接続）  
+- [ ] `extreme-norikae#4` VIEWモードのモック（OpenStreetMap連携）  
+- [ ] `extreme-norikae#5` 駅データの取り込み（train.teraren.com API）  
+- [ ] `gists#1` AW: Gist → bonsai/gists/raw を cp で自動取り込み  enhancement,agentic-workflow
+- [ ] `github-observatory#1` Add Repo Coordination Agent: recent 30 repos → BQML → bonsai/repos  enhancement
+- [ ] `github-observatory#2` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `github-observatory#3` collect workflow failing daily: DuckDB Binder Error (column 'path' missing) + COPILOT_GITHUB_TOKEN missing  
+- [ ] `github-observatory#4` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `github-observatory#5` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `github-observatory#6` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `github-observatory#7` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `hakkutsu#1` Insight Seekers Hackathon キックオフ企画（9/7→10/10）  
+- [ ] `hakkutsu#2` [9/7] アイデア定義を完成させる  9/7
+- [ ] `hakkutsu#3` [9/8–9/15] MVPを実装する  9/8–9/15
+- [ ] `hakkutsu#4` [9/16] ビジネスメンタリング #1 に向けて仮説整理  9/16
+- [ ] `hakkutsu#5` [9/18] 技術メンタリング #1・MVP課題解消  9/18 / kilo-duplicate,kilo-triaged
+- [ ] `hakkutsu#6` [9/19–9/29] MVPをプロトタイプへ進化  9/19–9/29 / kilo-duplicate,kilo-triaged
+- [ ] `hakkutsu#7` [9/30] ビジネスメンタリング #2・価値検証  9/30 / kilo-duplicate,kilo-triaged
+- [ ] `hakkutsu#8` [10/1–10/6] 最終版・デモ・発表資料を完成  10/1–10/6
+- [ ] `hakkutsu#9` [10/2] 技術メンタリング #2・最終技術確認  10/2 / kilo-duplicate,kilo-triaged
+- [ ] `hakkutsu#10` [10/7] 最終相談会・ピッチ最終確認  10/7 / kilo-duplicate,kilo-triaged
+- [ ] `hakkutsu#11` [10/8–10/9] 5分ピッチ最終リハーサル  10/8–10/9 / kilo-duplicate,kilo-triaged
+- [ ] `hakkutsu#12` [10/10] 成果発表会・5分ピッチ  10/10 / kilo-duplicate,kilo-triaged
+- [ ] `hormon#26` fix: tmux -F フォーマット文字列の # プレフィックス抜け (Phase 1 完了ブロッカー)  bug,phase1,tmux-mcp
+- [ ] `hoto#2` どうなるべきか — Hoto のあるべき姿  kilo-duplicate,kilo-triaged,goal,debug
+- [ ] `hoto#4` [env] process.env 統一 — Deno に process.env がない  env / kilo-duplicate,kilo-triaged,pain/env,debug
+- [ ] `idol-banduke#1` ADR: プロジェクト方針・地下アイドル限定ランキングの定義  architecture,ADR,needs-approval
+- [ ] `idol-banduke#2` ADR: Stack — React + Vite SPA  architecture,ADR,needs-approval,frontend
+- [ ] `idol-banduke#3` ADR: API — Hono on Cloudflare Workers  architecture,ADR,needs-approval,backend,cloudflare
+- [ ] `idol-banduke#4` ADR: Data — BigQuery + BQML をランキング分析基盤にする  architecture,ADR,needs-approval,bigquery,bqml,gcp
+- [ ] `idol-banduke#5` ADR: AI orchestration — Mastra の責務と非責務  architecture,ADR,needs-approval,ai,mastra
+- [ ] `idol-banduke#6` ADR: Cloudflare / GCP の境界 — Edge配信と分析基盤の分離  architecture,ADR,needs-approval,cloudflare,gcp,infrastructure
+- [ ] `idol-banduke#7` ADR: Ranking ontology — idol / group / source / observation / metric  architecture,ADR,needs-approval,ontology,data
+- [ ] `idol-banduke#8` ADR: Ranking algorithm — 指標・重み・正規化・期間・tie の仕様  architecture,ADR,needs-approval,bqml,ranking,kilo-duplicate,kilo-triaged
+- [ ] `idol-banduke#9` ADR: Source ingestion — Web / SNS / event data の収集と provenance  architecture,ADR,needs-approval,data,ingestion
+- [ ] `idol-banduke#10` ADR: API contract — OpenAPI / JSON Schema と versioning  architecture,ADR,needs-approval,api,openapi
+- [ ] `idol-banduke#11` ADR: PWA UX — ランキング閲覧・検索・詳細・比較  architecture,ADR,needs-approval,frontend,kilo-duplicate,kilo-triaged,pwa,ux
+- [ ] `idol-banduke#12` ADR: Repository architecture — monorepo / package boundaries  architecture,ADR,needs-approval,repository
+- [ ] `idol-banduke#13` ADR: CI/CD — design approval gate → test → deploy  architecture,ADR,needs-approval,ci-cd
+- [ ] `idol-banduke#14` ADR: Data quality / trust — ランキングの透明性と訂正フロー  architecture,ADR,needs-approval,ranking,kilo-duplicate,kilo-triaged,data-quality
+- [ ] `idol-banduke#15` ADR: Security / privacy — 公開データ限定・秘密情報分離  architecture,ADR,needs-approval,security,privacy
+- [ ] `idol-banduke#16` ADR: Observability — ranking pipeline / API / frontend の監視  architecture,ADR,needs-approval,kilo-duplicate,kilo-triaged,observability,operations
+- [ ] `idol-banduke#17` ADR: Cost architecture — Cloudflare edge + GCP BigQuery/BQML の予算管理  architecture,ADR,needs-approval,cloudflare,gcp,kilo-duplicate,kilo-triaged,cost
+- [ ] `idol-banduke#18` ADR: Release / environment strategy — local → preview → production  architecture,ADR,needs-approval,deployment,release
+- [ ] `idol-banduke#19` ADR: Testing strategy — ranking correctness / API contract / PWA E2E  architecture,ADR,needs-approval,ranking,kilo-duplicate,kilo-triaged,testing
+- [ ] `idol-banduke#20` ADR: 番付対象を「地下アイドル個人」に限定する  architecture,ADR,needs-approval,kilo-duplicate,kilo-triaged
+- [ ] `idol-banduke#21` ADR: 6部門制 — 横綱から個人番付を表示する  architecture,ADR,needs-approval
+- [ ] `idol-banduke#22` ADR: 月次「場所」 — 毎月リセットしてRanking Snapshotを確定する  architecture,ADR,needs-approval,kilo-duplicate,kilo-triaged
+- [ ] `idol-banduke#23` ADR: X / TikTok / Instagram / Spotify の定量観測モデル  ADR,needs-approval,data
+- [ ] `idol-banduke#24` ADR: mention / つぶやきの集計と重複除去  ADR,needs-approval,data
+- [ ] `idol-banduke#25` ADR: 個人スコアとグループ薄加点を分離する  ADR,needs-approval,ranking,kilo-duplicate,kilo-triaged
+- [ ] `idol-banduke#26` ADR: AW — 調査→競合→理論→Schema→実装候補を接続する研究Workflow  architecture,ADR,needs-approval,research
+- [ ] `idol-banduke#27` Research: 競合ベンチマーク — 既存アイドルランキングとの差分を定義する  needs-approval,research,competitor
+- [ ] `idol-banduke#28` ADR: Research Schema — competitor / source / theory / metric / evidence  ADR,needs-approval,kilo-duplicate,kilo-triaged,research,schema
+- [ ] `idol-banduke#29` Research Council: 差別化検討会議 — idol-banduke は何をランキングするのか  ADR,needs-approval,kilo-duplicate,kilo-triaged,research
+- [ ] `idol-banduke#30` Research Council: 1万PV/月を目指すマーケティング戦略 — 広告・案件・検索流入の設計  ADR,needs-approval,research
+- [ ] `idol-lab#8` [migrated from idol-quiz#32] chore: idol-quiz の全研究データを idol-lab へ移管  migrated from idol-quiz#32
+- [ ] `idol-lab#9` [migrated from idol-quiz#31] ADR: Cloudflareをバックエンド基盤として採用  migrated from idol-quiz#31
+- [ ] `idol-lab#10` [migrated from idol-quiz#30] feat: OSS API / Export形式を定義  migrated from idol-quiz#30
+- [ ] `idol-lab#11` [migrated from idol-quiz#29] docs: OSSへのコントリビューション・データ更新ルールを整備  migrated from idol-quiz#29
+- [ ] `idol-lab#12` [migrated from idol-quiz#28] feat: 地域×アイドル×イベントのGraph/Map可視化  migrated from idol-quiz#28
+- [ ] `idol-lab#13` [migrated from idol-quiz#27] feat: ランキング・6軸評価を再現可能なパイプラインにする  migrated from idol-quiz#27
+- [ ] `idol-lab#14` [migrated from idol-quiz#26] architecture: Open Dataとクイズ生成を分離  migrated from idol-quiz#26 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#15` [migrated from idol-quiz#25] data: 出典・プロヴェナンスを全データに付与  migrated from idol-quiz#25 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#16` [migrated from idol-quiz#24] collector: ライブ・フェス情報Collectorの設計  migrated from idol-quiz#24
+- [ ] `idol-lab#17` [migrated from idol-quiz#23] ontology: アイドル・サブジャンルOntologyをJSON化  migrated from idol-quiz#23
+- [ ] `idol-lab#18` [migrated from idol-quiz#22] data: アイドル・イベント・会場・楽曲の共通ID仕様を定義  migrated from idol-quiz#22 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#19` [migrated from idol-quiz#21] architecture: idol-quiz OSSエコシステムの全体設計  migrated from idol-quiz#21 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#20` [migrated from idol-quiz#20] feat: アイドルファン文化・現場用語をクイズ化  migrated from idol-quiz#20 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#21` [migrated from idol-quiz#19] feat: アイドルライブ会場DBを作成  migrated from idol-quiz#19 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#22` [migrated from idol-quiz#18] research: アイドル運営会社・事務所・レーベルの関係を整理  migrated from idol-quiz#18 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#23` [migrated from idol-quiz#17] research: アイドル楽曲・売上・チャートデータを整理  migrated from idol-quiz#17 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#24` [migrated from idol-quiz#16] feat: アイドル年表・世代データを作成  migrated from idol-quiz#16
+- [ ] `idol-lab#25` [migrated from idol-quiz#15] research: アイドルフェスの歴史・系譜を整理  migrated from idol-quiz#15 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#26` [migrated from idol-quiz#14] feat: アイドル地域マップを作成  migrated from idol-quiz#14 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#27` [migrated from idol-quiz#13] feat: アイドル画像・肖像権・ライセンス管理  migrated from idol-quiz#13 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#28` [migrated from idol-quiz#12] research: アイドル情報サイト・ランキングサイトを横断調査  migrated from idol-quiz#12 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#29` [migrated from idol-quiz#11] feat: アイドルイベント・ライブDBを拡充  migrated from idol-quiz#11 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#30` [migrated from idol-quiz#10] research: アイドルのサブジャンル・マトリックスを作成  migrated from idol-quiz#10 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#31` [migrated from idol-quiz#9] research: 「無頼派アイドル」の定義・分類基準を調査  migrated from idol-quiz#9 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#32` [migrated from idol-quiz#8] research: 「ご当地アイドル」の定義・分類基準を策定  migrated from idol-quiz#8 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#33` [migrated from idol-quiz#7] research: 「地下アイドル」の定義を調査・分類基準を策定  migrated from idol-quiz#7 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#34` [migrated from idol-quiz#6] research: アイドルランキングTOP100を6軸評価で作成  migrated from idol-quiz#6 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#35` [migrated from idol-quiz#5] research: アイドルフェスの運営会社・主催・制作会社を調査  migrated from idol-quiz#5 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#36` [migrated from idol-quiz#4] research: アイドルフェス年間動員数ランキングを調査・リスト化  migrated from idol-quiz#4 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#37` [migrated from idol-quiz#3] feat: 関西フリーライブ情報をソースから収集してイベント／クイズ化  migrated from idol-quiz#3 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#38` [migrated from idol-quiz#2] feat: クイズジャンルをアイドル・楽曲・ライブ・フェス・歴史・地域・予測に分離  migrated from idol-quiz#2 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#39` [migrated from idol-quiz#1] YATAIフェス2025のアイドル画像を使ったクイズ問題を追加  migrated from idol-quiz#1 / kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#40` feat: 1986年から10年刻みでアイドル名曲BEST10を機械的に抽出  
+- [ ] `idol-lab#41` feat: 2026年アイドルソング BEST100を機械的に抽出・プレイリスト化  kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#42` [PM] クイズ基盤を MVC + Agentic Pipeline として整理する  pm / enhancement,architecture
+- [ ] `idol-lab#43` chore: GitHub Pagesを有効化してidol-labをデプロイ  enhancement
+- [ ] `idol-live#4` イベントDB化：JSON → SQLite → 検索API  enhancement
+- [ ] `idol-produce#1` [POC] 箱経営ゲームの基本ループを実装する  poc / poc,game
+- [ ] `idol-produce#2` [ECONOMY] お金・生成Token・時間・体力の経済モデル  economy / game
+- [ ] `idol-produce#3` [FUNDING] コンセプト設計と投資家向けPITCH  funding / game
+- [ ] `idol-produce#4` [ASSET] arrange-me から楽曲Assetを借用する  asset / integration
+- [ ] `idol-produce#5` [ASSET] bon-anima からダンスAssetを借用する  asset / integration
+- [ ] `idol-produce#6` [ASSET] costume-generation から衣装Assetを借用する  asset / integration
+- [ ] `idol-produce#7` [ONTOLOGY] Song / Dance / Costume / Venue 共通Asset Contract  ontology / architecture
+- [ ] `idol-produce#8` [LIVE] 曲×ダンス×衣装×箱の組み合わせを評価する  live / game
+- [ ] `idol-produce#9` [OR] 出資・制作・箱・ライブをOR問題としてスコアリングする  or / game,architecture
+- [ ] `idol-produce#10` [PWA] スマホ3択UI・JSONシナリオ・Offline基盤  pwa / poc,pwa
+- [ ] `idol-produce#11` [FASHION] 衣装開発をファンサービスと経営投資としてゲーム化  fashion / game,integration,kilo-duplicate,kilo-triaged
+- [ ] `idol-produce#12` [SCENARIO] 2000万円の借金から始めるアイドル事務所 — バイアウト・プロジェクト  scenario / scenario,game-design
+- [ ] `idol-produce#13` Deploy to GitHub Pages failed: Pages site not enabled (10 failures, 09-02 batch)  
+- [ ] `igluu#1` design: onboarding — OpenCode / UiPath / Suno の役割と導入経路  design,onboarding,ux
+- [ ] `igluu#2` design: settings — 実行環境・接続・保存先の設定モデル  design,ux,settings
+- [ ] `igluu#3` design: prompt stock — Song Prompt JSON と意味的な分割単位  design,prompt,data
+- [ ] `igluu#4` design: job/workflow — 五月雨式生成の状態機械とGUI対象指定  design,ux,workflow
+- [ ] `igluu#5` design: usage UX — prompt投入からmp3確認までの操作体験  design,ux,usage
+- [ ] `igluu#6` design: artifact storage — mp3をクラウドへ蓄積する成果物モデル  design,storage,artifact
+- [ ] `igluu#7` design: Suno downloader — 生成workflowから分離した取得・整理サービス  design,artifact,downloader
+- [ ] `igluu#8` design: control plane — WSL OpenCode / Pi / ChatGPT Web からの司令モデル  design,workflow,architecture
+- [ ] `igluu#9` ADR: architecture decisions — UiPath接続 / 五月雨生成 / mp3 storage / downloader  design,architecture,adr
+- [ ] `igluu#17` ADR: docs structure  kilo-triaged,kilo-duplicate
+- [ ] `issues#2` GCP 非公開層: DB・ログ・vault を GCS 無料枠へバックアップ  enhancement
+- [ ] `issues#3` rooom/room 解体: 1.8G の再配置（log 系は wiki が吸い取り）  enhancement
+- [ ] `journal#1` ADR: Journalの新着順表示をファイル名とChrome拡張のどちらで実現するか  
+- [ ] `kamera#2` deploy workflow failed: GitHub Pages not enabled (3 consecutive failures)  
+- [ ] `keyboard-click#1` トレイアイコンが消える/見えない問題の根本調査  
+- [ ] `koe-compe#7` CI failing on initial setup: rubocop spacing lint + system-test LoadError (7 failures, 09-05)  
+- [ ] `matrix#1` Issue #2: Go Matrix Coreを実装し、BQ / Ontology / Synapse / MCPの共通インターフェースにする  architecture,backend,go,matrix,ontology,synapse
+- [ ] `matrix#2` Issue #2: BigQuery / BQML interface adapter  backend,go,matrix,bigquery,bqml,kilo-duplicate,kilo-triaged
+- [ ] `novel#1` 設計: ChatGPT全セッションrecap → 3時間単位journal統合  design
+- [ ] `oshareco-tana#2` Backend: Ontology + 行列計算エンジンの言語・アーキテクチャ選定  enhancement,backend,architecture,ontology
+- [ ] `pi-tui#1` [research] pi-coding-agent extension ecosystem  research
+- [ ] `pi-tui#2` [research] TUI / visual polish extensions for pi  research
+- [ ] `pi-tui#3` [research] terminal emoji picker / editor tools  research
+- [ ] `quiz-agents#1` feat: C-M-Vを3 repoに分離し、quiz-agents / quiz-data / quiz-viewを疎結合化する  enhancement
+- [ ] `quiz-agents#2` feat: quiz-data repositoryを作成しM層を分離  kilo-triaged,kilo-duplicate
+- [ ] `quiz-agents#3` feat: quiz-view repositoryを作成しV層を分離  kilo-triaged,kilo-duplicate
+- [ ] `quiz-agents#4` refactor: canonical contractをC/M/V境界へ再配置  kilo-triaged,kilo-duplicate
+- [ ] `quiz-agents#5` refactor: quiz-agentsをController専用にしてM/V依存を除去  kilo-triaged,kilo-duplicate
+- [ ] `quiz-agents#6` feat: idol-quizを3 repo contract経由へ移行  kilo-triaged,kilo-duplicate
+- [ ] `quiz-agents#7` Schema-first API architecture: Schema → API → Agent → Workflow → View  architecture,schema,api,ontology,agent
+- [ ] `repo-create-ext#1` ADR-001: UX — Popup + Side Panelを採用する  ADR
+- [ ] `repo-create-ext#2` ADR-002: Platform — Manifest V3 + Chromium共通実装を採用する  ADR
+- [ ] `repo-create-ext#3` ADR-003: Security — GitHub認証を保持せずgithub.com/newへ委譲する  ADR
+- [ ] `repo-create-ext#4` ADR-004: Scope — MVPはgithub.com/newランチャーに限定し段階拡張する  ADR,kilo-triaged,kilo-duplicate
+- [ ] `repos-analyze#1` 1000 reposを連携可能な組織として構成する  
+- [ ] `repos-analyze#2` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `repos-analyze#3` chore: execute all-repo health calculation in GitHub Actions  enhancement
+- [ ] `repos-analyze#4` automation workflows failing: DuckDB Binder Error + COPILOT_GITHUB_TOKEN + calculate-repo-health  
+- [ ] `repos-analyze#5` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `repos-analyze#6` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `repos-analyze#7` repos 縮退: data 資産の正本化先を確定（検討）  
+- [ ] `repos-analyze#8` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `repos-analyze#9` [aw] Repo Status failed  aw / agentic-workflows
+- [ ] `rooom#1` 各repoへrooomを解体・分散し、index中心の構成と状況データ保存先を設計する  architecture,design,refactor
+- [ ] `rooom#2` 解体屋エージェントを実装しrooom解体を自動化する  architecture,design,refactor,agent,kilo-duplicate,kilo-triaged
+- [ ] `rooom#3` 解体屋を自己適用：rooom自身をSCANして解体計画を生成する  architecture,design,refactor,agent,kilo-duplicate,kilo-triaged
+- [ ] `soubi#2` TUI: 画面操作の自動テストを追加  
+- [ ] `soubi#3` opencode: organizations 連携の対応  
+- [ ] `soubi#4` CLI: version 表示とエラー終了コード整備  
+- [ ] `soubi#5` 安全機構: dry-run で変更差分をプレビュー  
+- [ ] `stock-bqml#22` gh-pages deploy failure: Pages site not enabled (10 consecutive daily failures)  
+- [ ] `todo-pizza#1` Define Time Span model: LIFE → 5 minutes  
+- [ ] `todo-pizza#2` Define Break semantics: task decomposition, not rest  
+- [ ] `todo-pizza#3` Design Task Circuit concept  
+- [ ] `todo-pizza#4` Add Time Box data model  
+- [ ] `todo-pizza#5` Implement Time Boxer UI  
+- [ ] `todo-pizza#6` Create Micro Scheduling Engine  
+- [ ] `todo-pizza#7` Define flexible Time Box sizes  
+- [ ] `todo-pizza#8` Model Time Span hierarchy  kilo-duplicate,kilo-triaged
+- [ ] `todo-pizza#9` Add Circuit mode definitions  
+- [ ] `todo-pizza#10` Design focus-preserving transitions  
+- [ ] `todo-pizza#11` Create Circuit template: study  
+- [ ] `todo-pizza#12` Create Circuit template: writing  kilo-duplicate,kilo-triaged
+- [ ] `todo-pizza#13` Create Circuit template: coding  kilo-duplicate,kilo-triaged
+- [ ] `todo-pizza#14` Define Circuit completion and exit rules  
+- [ ] `todo-pizza#15` Generate schedule JSON schema  
+- [ ] `todo-pizza#16` Create /api/split contract  
+- [ ] `todo-pizza#17` Create /api/schedule contract  kilo-duplicate,kilo-triaged
+- [ ] `todo-pizza#18` Implement Gemini adapter  
+- [ ] `todo-pizza#19` Implement DeepSeek adapter  kilo-duplicate,kilo-triaged
+- [ ] `todo-pizza#20` Add LLM provider abstraction  
+- [ ] `todo-pizza#21` Add Secret Manager integration  
+- [ ] `todo-pizza#22` Firebase Authentication with Google  
+- [ ] `todo-pizza#23` Add Firestore persistence  
+- [ ] `todo-pizza#24` Deploy API on Cloud Run  
+- [ ] `todo-pizza#25` Integrate Google Calendar OAuth  
+- [ ] `todo-pizza#26` Create Calendar event adapter  
+- [ ] `todo-pizza#27` Handle Calendar conflicts  
+- [ ] `todo-pizza#28` Add focus-preserving Circuit UX  
+- [ ] `todo-pizza#29` Support optional rest events  
+- [ ] `todo-pizza#30` Document CUT → BOX → CIRCUIT → BOOK  
+- [ ] `todo-pizza#31` Product definition — 残務を切って、考えずに終わらせる  enhancement
+- [ ] `todo-pizza#32` Competitive research — Todoist / Sunsama / Motion / Reclaim / Goblin.tools  
+- [ ] `todo-pizza#33` UX/UI — 次の1タスクだけを見せる  
+- [ ] `todo-pizza#34` Stack decision — Svelte / HTMX / Vue / TypeScript  
+- [ ] `todo-pizza#35` Backend decision — Ruby / OCaml / TypeScript  
+- [ ] `todo-pizza#36` Ontology — Task Semantic Ontology / Todo / Slice / Action / Plan / TimeBox / Circuit / Log  
+- [ ] `todo-pizza#37` Metadata & Execution Log — 計画ではなく実績を学習資産にする  
+- [ ] `todo-pizza#38` AI decomposition — Recursive Semantic CUTでActionableになるまで分解  
+- [ ] `todo-pizza#39` Adaptive scheduling — 実績から次のTimeBoxを調整  
+- [ ] `todo-pizza#40` Agent architecture — Observe → Cut → Plan → Schedule → Execute → Log → Adapt  
+- [ ] `todo-pizza#41` Agent tool contract — split / schedule / log / calendar  
+- [ ] `todo-pizza#42` Local-first persistence — Todo / Plan / ExecutionLog  
+- [ ] `todo-pizza#43` Privacy & data ownership — ExecutionLog is user property  
+- [ ] `todo-pizza#44` PWA / offline — いつでもCUTして実行できる  
+- [ ] `todo-pizza#45` Evaluation protocol — 残務完了率と計画精度を測る  
+- [ ] `todo-pizza#46` Release architecture — Todo Pizza v1  
+- [ ] `todo-pizza#47` Task Semantic Ontology — タスクの意味を構造化する  ontology
+- [ ] `todo-pizza#48` CUT Semantics — STRUCTURE / ORDER / GROUP / REMOVEを定義  ontology
+- [ ] `todo-pizza#49` Recursive CUT — 実行可能になるまで無限分解する  kilo-duplicate,kilo-triaged,ontology,ai
+- [ ] `todo-pizza#50` Task Semantic Compiler — 意味からNext Actionへの変換  kilo-duplicate,kilo-triaged,ontology,ai,architecture
+- [ ] `todo-pizza#51` TAKT連携 — GitHub APIをTask Backendとして利用する  ontology,integration,github
+- [ ] `todo-pizza#52` GitHub Actions Orchestration — WFからGWS / GASを実行する  integration,github,automation
+- [ ] `todo-pizza#53` JSON-only API — Todo Pizzaの全境界をJSONで統一する  ontology,architecture,api
+- [ ] `todo-pizza#54` Extensible Task Ontology — オントロジを拡張可能にする  kilo-duplicate,kilo-triaged,ontology,architecture,api
+- [ ] `todo-pizza#55` Canonical Task JSON — Ontologyの共通JSON表現を定義する  ontology,architecture,api
+- [ ] `todo-pizza#56` Ontology Evolution Loop — 実行結果からTask Ontologyを拡張する  kilo-duplicate,kilo-triaged,ontology,architecture,agent
+- [ ] `todo-pizza#57` Open Task Data — ADHDフレンドリーを入口にタスクをオープン化し相互利用可能にする  ontology,architecture,api
+- [ ] `tokyo-craftbeer#1` コードレビュー指摘事項まとめ  bug,enhancement,security
+- [ ] `tokyo-craftbeer#2` [Security] SNS ハンドラのパストラバーサル脆弱性を修正  security / bug,security
+- [ ] `tokyo-craftbeer#3` [Security] ソースコードにハードコードされた DB 認証情報を削除  security / bug,security
+- [ ] `tokyo-craftbeer#4` [Security] DevHandler のデータ競合を修正（mutex 追加）  security / bug,security
+- [ ] `tokyo-craftbeer#6` [Security] DB エラーの詳細メッセージをクライアントに返さないよう修正  security / bug,security
+- [ ] `tokyo-craftbeer#7` [Quality] GetRestaurant が DB エラー時も 404 を返す問題を修正  quality / bug
+- [ ] `vj-blocks#3` Duplicate case 13 — Voronoi mode is dead code  bug
+- [ ] `vj-blocks#4` MODE_NAMES[7] missing — Spectrum analyzer mode is completely unreachable  bug
+- [ ] `vj-blocks#5` Duplicate fire.html — root and fire/index.html are identical  bug
+- [ ] `vj-blocks#6` No .gitignore file in repository  bug
+- [ ] `vj-blocks#7` Auto-cycle silently requires microphone to be active  bug
+- [ ] `vj-blocks#9` CI validation only checks first <script> tag  bug
+- [ ] `voice-bbs-web#1` 日本語TTSサンプルを30件補充してseedスクリプトを実装  enhancement
+- [ ] `voice-bbs-web#2` Waveformをmasterへ統合しuiMode依存を整理する  ui/ux
+- [ ] `voice-bbs-web#3` Design Systemを定義・導入する  design,ui/ux
+- [ ] `voice-bbs-web#4` Design Systemを主要画面へ適用する  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#5` Design System適用後の品質検証とvisual review  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#6` FE: Design / UIレビューに基づく全体洗練  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#7` FE: 実装後のUI品質ゲートと最終Visual Review  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#8` FE/UX: 初回は「テスト雑談部屋」に参加、慣れたら新規ルームを有料解放  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#9` FE: 初回ユーザーをテスト雑談部屋へ導く  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#10` FE: 体験後の「新規ルーム作成」解放条件を実装  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#11` FE: 新規ルーム作成を有料機能として見せる  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#12` FE: 「声は3日で消える」UX表示を実装  design,ui/ux
+- [ ] `voice-bbs-web#13` Policy: 音声3日表示と実データ保持を分離定義  design,ui/ux,kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#14` Architecture: Vue / Next.js / React 比較と将来PoC  design,ui/ux
+- [ ] `voice-bbs-web#15` AW: 開発メトリクス自動収集と合理化ループを実装  enhancement
+- [ ] `voice-bbs-web#16` BQML: metrics投入・学習・予測をAWループへ接続  enhancement
+- [ ] `voice-bbs-web#19` Architecture: フレームワーク別ブランチ運用からモノレポ運用へ方針決定  
+- [ ] `voice-bbs-web#20` Monorepo: apps/vue を現行Vue主線として整理する  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#21` PoC: React + Vite版Voice BBSをVueと同一機能で実装する  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#22` PoC: Next.js版Voice BBSを比較基準として整理する  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#23` Monorepo: 共通packages（API / types / UI / test契約）を切り出す  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#24` Tooling: workspace / package manager / scriptsをモノレポ標準化する  
+- [ ] `voice-bbs-web#25` CI: Vue / React / Nextを同一条件でmatrix検証する  
+- [ ] `voice-bbs-web#26` Benchmark: Vue / React / Nextの実測比較CLIを作る  
+- [ ] `voice-bbs-web#27` UX: フレームワーク比較用の同一Voice BBS体験スコープを固定する  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#28` Deploy: Vue / React / NextをCloudflare Pagesへ比較デプロイする  
+- [ ] `voice-bbs-web#29` Docs: Vue / React / Nextの比較レポートと最終ADRを統合する  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#30` Hono foundation: dev → API smoke test → typecheck → build を一通で通す  
+- [ ] `voice-bbs-web#32` Hono rooms: categories / threads API を固める  
+- [ ] `voice-bbs-web#33` Hono voice-post: thread posts / audio upload API を固める  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#34` Hono delete: post deletion / owner-admin authorization を固める  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#35` Hono count: device usage / remaining quota API を固める  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#36` Hono contract: OpenAPI + API integration test を完成させる  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#37` Hono CI gate: feature branch ごとに test / typecheck / build を必須化  kilo-duplicate,kilo-triaged
+- [ ] `voice-bbs-web#38` Hono cleanup: 4 FE着手前のAPI基盤確定  kilo-duplicate,kilo-triaged
+- [ ] `yon-walk#16` GPS位置検出の精度検証・調整  bug
+- [ ] `yosegaki-web#31` 📊 Sprint Priority Board (10🔴 0🟠 0🟡 0🔵)  P0
+- [ ] `yotei-ts#1` [BUG] D1 DBが実際には使われていない — イベントはGASに直書きのまま  bug / bug
+- [ ] `yotei-ts#7` [CRITICAL] D1を使わずGASが本番DB — D1移行が最優先  critical / bug,priority-high,kilo-triaged,kilo-duplicate
+- [ ] `yotei-ts#16` [CRITICAL] セキュリティ: .envのAPIキー対策とCORS制限  critical / bug,security
+- [ ] `yotei-ts#25` [BUG] HMAC署名がhex返却→LINE署名はBase64→bot全メッセージ403拒否  bug / bug
+- [ ] `yotei-ts#26` [BUG] handleImage内のmissing_dateブランチで未宣言変数`sess`を参照しReferenceError  bug / bug
+- [ ] `yotei-ts#27` [BUG] updateSession(getOrCreateSession())が空セッションを保存しpartialEventを消失  bug / bug
+- [ ] `yotei-ts#28` [BUG] updateEventがGASレスポンスを読まず常にtrueを返す  bug / bug
+- [ ] `yotei-ts#29` [BUG] userId未定義時'unknown'フォールバックでセッション衝突  bug / bug
+- [ ] `yotei-ts#30` [SECURITY] emailフィールドをサニタイズなしでLLMプロンプトに埋め込みプロンプトインジェクション可能  security / bug,security
+- [ ] `yotei-ts#31` [SECURITY] fetchWebpageTextが任意URLを代理フェッチしSSRFリスク  security / bug,security
+- [ ] `yotei-ts#33` [BUG] btoa変換前の文字列連結ループで大画像送信時メモリ不足リスク  bug / bug
+- [ ] `yotei-ts#34` [SECURITY] 目安箱APIにテキスト長上限なく大量送信でLLMコスト攻撃が可能  security / bug,security
+- [ ] `yotei-ts#36` [CI] Deploy to Cloudflare Pages が認証エラーで失敗（CLOUDFLARE_API_TOKEN 期限切れ）  ci / bug
+
+## 🟢 積む (1042)
+- [ ] `MonoModBass#1` Add local AI chord generation adapter  
+- [ ] `PROFILE#1` [debug] マウスクリックでメニュー選択できない  debug
+- [ ] `PROFILE#2` [debug] 矢印キーがメニューで効かないことがある  debug
+- [ ] `PROFILE#3` [debug] Windows PowerShell 5.1 でプロファイルがパースエラーになる  debug
+- [ ] `acp-SDK#3` Client: Add polling helper for async runs  enhancement
+- [ ] `acp-SDK#4` Client: Add streaming support via SSE  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `acp-SDK#5` docs: Add API reference from OpenAPI spec  documentation
+- [ ] `agent-buffett#1` OpenRouter API key in .env is invalid (401 User not found) — live test blocked  
+- [ ] `ai-framework#5` [PIPELINE] 動画自動生成パイプライン設計  pipeline / pipeline,design
+- [ ] `ai-framework#6` [DATA] クイズデータ生成基盤  data / data,quiz
+- [ ] `ai-framework#7` [COMFYUI] SDXL画像生成統合 — 浮世絵風LoRA  comfyui / comfyui,flux
+- [ ] `ai-framework#8` [VIDEO] ComfyUI動画生成 — 静止画→動画変換  video / video,remotion
+- [ ] `ai-framework#9` [YOKAI] 妖怪かいかいきき教育動画パイプライン  yokai / kilo-triaged,kilo-duplicate,pipeline,yokai
+- [ ] `air-research#1` 臭気データの分析パイプライン統合  enhancement
+- [ ] `air-research#2` BQスキーマに臭気10物質カラムを追加  enhancement
+- [ ] `air-research#3` ESP32ファームウェアに臭気センサー読み取りを追加  enhancement
+- [ ] `air-research#4` 臭気シナリオ自動判定ロジックを analyze.py に追加  enhancement,kilo-triaged,kilo-duplicate
+- [ ] `air-research#5` HTMLレポートに臭気グラフ・サマリーセクションを追加  enhancement
+- [ ] `air-research#6` Looker Studioに臭気ダッシュボードを構築  enhancement,kilo-triaged,kilo-duplicate
+- [ ] `air-research#8` ANALYZE 強化 + ダッシュボード (LLM 以外)  enhancement,analysis,dashboard
+- [ ] `android-standups#1` Research Lab: define human–AI division of labor  research
+- [ ] `bon#1` Initial setup: bon-odori dance teacher  
+- [ ] `bons-ai-agent#1` Kanji 4-Script Conversion Tool — Phase 2 (Rust)  
+- [ ] `bridge-archetypes-100#1` 構造サブジャンル毎の個別ページ化  enhancement
+- [ ] `chrome-synced-tabs-ext#2` feat: サーバー不要版の検証  
+- [ ] `chrome-synced-tabs-ext#3` fix: Chrome バージョンによる DOM 構造の差異  
+- [ ] `chrome-synced-tabs-ext#4` feat: タブのグループ化表示  
+- [ ] `chrome-synced-tabs-ext#5` fix: service worker再起動でextractingフラグがリセットされる  
+- [ ] `chrome-synced-tabs-ext#6` fix: sleep(5000)の硬编码を修正  
+- [ ] `chrome-synced-tabs-ext#7` fix: タイムアウト60秒→30秒に短縮  
+- [ ] `chrome-synced-tabs-ext#8` feat: エラー時にリトライボタン追加  
+- [ ] `cli-visualizer#1` WSL: オーディオデバイスがない環境でもダミー入力でテスト表示できるように  
+- [ ] `cli-visualizer#2` ビジュアライズモード追加: スペクトラム・スコープ・パーティクル  
+- [ ] `cli-visualizer#3` レトロCGテーマ強化: CRTスキャンライン・ブラウン管エミュ  
+- [ ] `cli-visualizer#4` 実マイク入力対応: WASAPI / PulseAudio 経由でWindowsマイクをキャプチャ  kilo-triaged,kilo-duplicate
+- [ ] `cli.js#1` feat: 新機能追加 - アイデア管理・過去比較・連携・問い合わせ・サーバ  enhancement
+- [ ] `color-scheme-quiz#2` Cloud Runでのコレクションデータ永続化対応  bug
+- [ ] `compeitou-rb#3` auto_link undefined - will crash when first post is created  
+- [ ] `compeitou-rb#4` SQLite data loss on Render free tier - every deploy/restart wipes DB  
+- [ ] `compeitou-rb#5` No controller tests - test suite is empty  
+- [ ] `compeitou-rb#6` force_ssl and assume_ssl are commented out in production  
+- [ ] `compeitou-rb#7` Dead code: wishes/proofs tables and schema have no application code  
+- [ ] `compeitou-rb#8` No rate limiting - POST /posts is open to spam  
+- [ ] `coquille#1` WASM-RUSTで高速化  
+- [ ] `daihon#1` 進化結果→パイプライン連携: 最高DNAの自動反映  
+- [ ] `data-detective#1` 第1話：商店街のシャッター通りを救え  episode
+- [ ] `data-detective#2` 第2話：学校選択の謎  episode
+- [ ] `data-detective#3` 第3話：空き家の急増、原因は？  episode
+- [ ] `data-detective#4` 第4話：補助金の不自然な偏り  episode
+- [ ] `data-detective#5` 第5話：防犯灯をどこに設置すべきか  episode
+- [ ] `data-detective#6` 第6話：クレーム対応が遅い部署はどこだ  episode,kilo-triaged,kilo-duplicate
+- [ ] `data-detective#7` 第7話：納税額が急減した企業の謎  episode,kilo-triaged,kilo-duplicate
+- [ ] `data-detective#8` 第8話：バス路線廃止の影響を可視化せよ  episode
+- [ ] `data-detective#9` 第9話：豪雨災害、避難所が足りない？  episode
+- [ ] `data-detective#10` 第10話：「データがあります」と言うだけで使えない課への対策  episode
+- [ ] `data-detective#11` 第11話：市民の声を構造化せよ（GenIEデビュー）  episode
+- [ ] `data-detective#12` 第12話：他市町村との比較で予算要求を通せ  episode
+- [ ] `data-detective#13` 第13話：補助金申請の自動チェック（Text-to-SQL）  episode
+- [ ] `data-detective#14` 第14話：子育て世帯の流出を止めたい  episode
+- [ ] `data-detective#15` 第15話：コロナ後の観光回復、データは語る  episode
+- [ ] `data-detective#16` 第16話：窓口業務のムダを可視化  episode,kilo-triaged,kilo-duplicate
+- [ ] `data-detective#17` 第17話：データクリーンルームで個人情報を守れ  episode
+- [ ] `data-detective#18` 第18話：CSVマクロ事件  episode
+- [ ] `data-detective#19` 第19話：「0とNULL」で予算が消えた  episode
+- [ ] `data-detective#20` 第20話：エピローグ — データ探偵事務所開設  episode
+- [ ] `denkou-keijiban#13` [Test] features.spec.js > LED ボード: アニメーションしている（フレーム間でピクセルが変化）  test / bug,automated-test
+- [ ] `denkou-keijiban#14` [Test] features.spec.js > LED ボード: アニメーションしている（フレーム間でピクセルが変化）  test / bug,automated-test
+- [ ] `denkou-keijiban#15` [Test] features.spec.js > エフェクト: BLK ボタンクリックで OFF になる  test / bug,automated-test
+- [ ] `denkou-keijiban#16` [Test] features.spec.js > エフェクト: BLK ボタンクリックで OFF になる  test / bug,automated-test
+- [ ] `denkou-keijiban#17` [Test] features.spec.js > メッセージモード: AUTO がデフォルトでアクティブ  test / bug,automated-test
+- [ ] `denkou-keijiban#18` [Test] features.spec.js > メッセージモード: LOOP クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#19` [Test] features.spec.js > メッセージモード: PRE クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#20` [Test] features.spec.js > メッセージモード: BBS クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#21` [Test] features.spec.js > メッセージモード: ALL クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#22` [Test] features.spec.js > メッセージモード: AUTO がデフォルトでアクティブ  test / bug,automated-test
+- [ ] `denkou-keijiban#23` [Test] features.spec.js > メッセージモード: LOOP クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#24` [Test] features.spec.js > メッセージモード: PRE クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#25` [Test] features.spec.js > メッセージモード: BBS クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#26` [Test] features.spec.js > メッセージモード: ALL クリックでアクティブになる  test / bug,automated-test
+- [ ] `denkou-keijiban#27` [Test] features.spec.js > /hori 全画面モード: パネルが非表示  test / bug,automated-test
+- [ ] `denkou-keijiban#28` [Test] features.spec.js > /hori 全画面モード: EXIT ボタンが表示されている  test / bug,automated-test
+- [ ] `denkou-keijiban#29` [Test] features.spec.js > /hori 全画面モード: EXIT クリックでパネルが戻る  test / bug,automated-test
+- [ ] `denkou-keijiban#30` [Test] features.spec.js > /hori 全画面モード: フッターの HORI リンクが表示されている  test / bug,automated-test
+- [ ] `denkou-keijiban#31` [Test] features.spec.js > /hori 全画面モード: パネルが非表示  test / bug,automated-test
+- [ ] `denkou-keijiban#32` [Test] features.spec.js > /hori 全画面モード: EXIT ボタンが表示されている  test / bug,automated-test
+- [ ] `denkou-keijiban#33` [Test] features.spec.js > /hori 全画面モード: EXIT クリックでパネルが戻る  test / bug,automated-test
+- [ ] `denkou-keijiban#34` [Test] features.spec.js > /hori 全画面モード: フッターの HORI リンクが表示されている  test / bug,automated-test
+- [ ] `denkou-keijiban#35` [Test] features.spec.js > モバイルタップ全画面: タップでボードが全画面展開される  test / bug,automated-test
+- [ ] `denkou-keijiban#36` [Test] features.spec.js > モバイルタップ全画面: タップでボードが全画面展開される  test / bug,automated-test
+- [ ] `denkou-keijiban#37` [Test] features.spec.js > API エンドポイント: GET /api/board が JSON を返す  test / bug,automated-test
+- [ ] `denkou-keijiban#38` [Test] features.spec.js > API エンドポイント: GET /svg/00ff41/3/TEST が SVG を返す  test / bug,automated-test
+- [ ] `denkou-keijiban#39` [Test] features.spec.js > API エンドポイント: GET /api/board が JSON を返す  test / bug,automated-test
+- [ ] `denkou-keijiban#40` [Test] features.spec.js > API エンドポイント: GET /svg/00ff41/3/TEST が SVG を返す  test / bug,automated-test
+- [ ] `denkou-keijiban#41` [Test] features.spec.js > 棒人間: クリックで ON/OFF が切り替わる  test / bug,automated-test
+- [ ] `denkou-keijiban#42` [Test] features.spec.js > 棒人間: クリックで ON/OFF が切り替わる  test / bug,automated-test
+- [ ] `denkou-keijiban#43` [UX] モバイルで掲示板タップ → 意図せず display mode に切り替わる（edit mode / display mode の定義）  ux / bug,ux
+- [ ] `dokotsubu#1` 自宅でやること（デプロイ準備）  
+- [ ] `eejanaika#1` 店舗の実際の住所に更新  enhancement
+- [ ] `eejanaika#2` タイムテーブルにアーティスト画像を追加  enhancement
+- [ ] `eejanaika#3` オフライン対応 (PWA)  enhancement
+- [ ] `eejanaika#4` 散歩ルートの地図画像を追加  enhancement
+- [ ] `eejanaika#5` 機材リストのCSV/スプレッドシート出力  enhancement
+- [ ] `emoji-shiritori#1` Soloモードを「ひとりしりとり」として成立させる  enhancement
+- [ ] `fast-go#2` 場所ごとのログ一括保存（場所・時刻・メモ・スクショ）＋ GMAP投稿下書き生成  
+- [ ] `fastmap#1` M1: fast.com DOM調査結果のまとめ  
+- [ ] `fastmap#2` M2: 拡張機能骨格の作成 (Manifest V3 + TS + Vite)  
+- [ ] `fastmap#3` M3: fast.com スクリーンショット機能  kilo-triaged,kilo-duplicate
+- [ ] `fastmap#4` M4: AI テキスト生成 (Gemini API)  
+- [ ] `fastmap#5` M5: Google Maps 連携 (URL スキーム + 場所検索)  
+- [ ] `fastmap#6` M6: GitHub Actions CI + Release ワークフロー  
+- [ ] `file2clipboad#1` クロームでも使えるか確認する  
+- [ ] `hamachi#1` balance: missing import sys + UnicodeEncodeError on Windows (cp932)  
+- [ ] `hanamaru-excel#1` 📊 学習統計ダッシュボード  enhancement
+- [ ] `hanamaru-excel#2` 🎵 効果音とBGM  enhancement
+- [ ] `hanamaru-excel#3` 🌙 ダークモード対応  enhancement
+- [ ] `hanamaru-excel#4` 🏅 リーダーボード（ローカル）  enhancement
+- [ ] `hanamaru-excel#5` 📖 問題の解説をもっと見やすく  enhancement
+- [ ] `hanamaru-excel#6` 📊 学習統計グラフ  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `hanamaru-excel#7` 🎵 効果音・BGM対応  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `hanamaru-excel#8` 🌙 ダークモード対応  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `hanamaru-excel#9` 📖 解説の図解化  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `hanamaru-excel#10` 📱 PWAインストール促進バナー  enhancement
+- [ ] `hello-agent-shop#1` Webhook 登録  must
+- [ ] `hello-agent-shop#2` Cloudflare Access 設定  nice
+- [ ] `hello-agent-shop#3` D1 購入履歴テーブル作成  nice
+- [ ] `hello-agent-shop#4` カスタムドメイン設定  nice
+- [ ] `hello-agent-shop#5` メール通知（Cloudflare Email Routing）  future
+- [ ] `hello-agent-shop#6` 生成リトライ機構  future
+- [ ] `hormon#1` HERMES ワークスペース構造化  
+- [ ] `hormon#2` [Phase 0] 準備: gitignore 整備、現状スナップショット  phase 0 / structure,phase0
+- [ ] `hormon#3` [Phase 1] フォルダ作成: agents, mcp, scripts, work, products, outputs, docs  phase 1 / structure,phase1
+- [ ] `hormon#4` [Phase 2] ファイル移動: 生成ファイル、ドキュメント、スクリプト、スキル  phase 2 / structure,phase2
+- [ ] `hormon#5` [Phase 3] hermes-agent へ PR: 共通スキル・MCP・スクリプト  phase 3 / structure,phase3
+- [ ] `hormon#9` [Phase 4] hermes-backup へプッシュ: hermes-diff.sqlite 再生成、work/products/outputs/scripts/docs 配置  phase 4 / structure,phase4,kilo-triaged,kilo-duplicate
+- [ ] `hormon#10` [Phase 5] 自動整理スクリプト作成: organize.py, backup.py 改良, restore.py 改良, create-agent.py  phase 5 / structure,phase5,kilo-triaged,kilo-duplicate
+- [ ] `hormon#11` [Phase 6] GitHub Actions 設定: backup.yml / organize.yml 作成、定期実行・手動トリガー確認  phase 6 / structure,phase6
+- [ ] `hormon#12` [Phase 7] 検証: 家 PC で hermes-backup クローン → restore → 全環境再現確認  phase 7 / structure,phase7,kilo-triaged,kilo-duplicate
+- [ ] `hormon#13` [Skill] 重複スキルの統合: 14ディレクトリのネスト重複を解消  skill / phase0,skill,cleanup
+- [ ] `hormon#14` [Skill] HERMES固有スキルの特定と opencode 共通スキルの分離  skill / phase1,kilo-triaged,kilo-duplicate,skill,restructure
+- [ ] `hormon#15` [ACP] HERMES ↔ opencode ブリッジ設計: ACP 経由スキル呼び出し  acp / acp,bridge,architecture
+- [ ] `hormon#16` [Skill] パス不整合の修正: 絶対パス → 相対パス + ケース統一  skill / kilo-triaged,kilo-duplicate,skill,cleanup,paths
+- [ ] `hormon#17` [Skill] opencode へのスキル移動: 汎用スキル 74個の移行  skill / kilo-triaged,kilo-duplicate,skill,opencode,migration
+- [ ] `hormon#18` [Skill] SKILL.md frontmatter の統一: Hermes Agent 規格 vs opencode 形式  skill / kilo-triaged,kilo-duplicate,skill,frontmatter,standards
+- [ ] `hormon#19` [Skill] スキル依存関係の明確化: データフロー・MCP 依存の文書化  skill / documentation,kilo-triaged,kilo-duplicate,skill,architecture
+- [ ] `hormon#20` [Agent] エージェント定義の整理: HERMES vs opencode の棲み分け  agent / kilo-triaged,kilo-duplicate,cleanup,restructure,agent
+- [ ] `hormon#21` [Test] スキルリファクタリングのテスト戦略策定  test / kilo-triaged,kilo-duplicate,testing,ci,quality
+- [ ] `hormon#22` [Meta] スキルリファクタリング進捗トラッキング  meta / kilo-triaged,kilo-duplicate,restructure,meta,tracking
+- [ ] `hormon#23` [ADR-001] Docker コンテナによるワークスペース持帰り方針の決定  adr-001 / architecture,docker,portability
+- [ ] `hormon#24` LM Studio を Windows に導入し Hermes のローカル worker にする  
+- [ ] `hormon#25` feat: Windows→WSL 移行完了 / h エイリアス修正 / Ollama 削除  documentation
+- [ ] `hormon#27` chore: server.py の未使用 import 削除 (shlex, sys)  tmux-mcp,chore
+- [ ] `hormon#28` feat: Hermes MCP 設定に tmux-mcp を登録して Phase 1 動作確認  phase1,kilo-triaged,kilo-duplicate,tmux-mcp,feat
+- [ ] `hormon#29` [Phase 2] ACP 子エージェント spawn → tmux pane 自動割当  phase 2 / phase2,kilo-triaged,kilo-duplicate,acp,tmux-mcp,feat
+- [ ] `hormon#30` [Phase 2] 全 pane 状態サマリーツール (tmux_all_panes_status)  phase 2 / phase2,kilo-triaged,kilo-duplicate,tmux-mcp,feat
+- [ ] `hormon#31` [Phase 3] split_pane / kill_pane / select_pane ツール追加  phase 3 / phase3,kilo-triaged,kilo-duplicate,tmux-mcp,feat
+- [ ] `hormon#32` [unified-logger] Cloud sync scripts: MotherDuck + BigQuery  unified-logger / phase1,unified-logger,feature
+- [ ] `hormon#33` [unified-logger] GitHub Actions auto-sync workflow  unified-logger / phase2,kilo-triaged,kilo-duplicate,unified-logger,feature,github-actions
+- [ ] `hormon#34` [unified-logger] Auto-logging hooks for Hermes/OC session end  unified-logger / phase2,unified-logger,feature,automation
+- [ ] `hormon#35` [unified-logger] Cross-PC DB sync and FTS improvements  unified-logger / phase3,unified-logger,feature,performance
+- [ ] `hormon#36` [Epic] Unified Session Logger — 全AIエージェント統合ログ  epic / kilo-triaged,kilo-duplicate,meta,unified-logger,epic
+- [ ] `hotaru#1` T1: 自己解読字幕 — 90秒ループの核  opencode
+- [ ] `hotaru#2` T2: 四つのプリセット（問答・変奏・灯籠・鍵）  opencode
+- [ ] `hotaru#3` T3: 初回体験・音・スマホ最適化  opencode
+- [ ] `hotaru#4` T4: GitHub Actions pages.yml（CI/CD）  opencode
+- [ ] `hoto#1` どうなりたいか — Hoto のビジョン  goal
+- [ ] `hoto#3` dev のペイン調査 — 仮想アンケート  pain
+- [ ] `hoto#5` [stream] Web Stream 統一 — Node Stream vs Web Stream  stream / pain/stream
+- [ ] `hoto#6` [fs] readFileSync 戻り値統一 — Buffer vs Uint8Array  fs / pain/fs
+- [ ] `hoto#7` [crypto] randomUUID がない — Deno に crypto.randomUUID がない  crypto / pain/crypto
+- [ ] `hoto#8` [meta] 優先順位付けの自動化 — ポイント評価システム  meta / pain/env
+- [ ] `hoto#9` GOAL: ランタイム間の API 差をゼロにする  goal
+- [ ] `hoto#10` Principle: 最小のラッパー  principle
+- [ ] `hoto#11` Principle: diff がロードマップ  principle
+- [ ] `hoto#12` Principle: 実装はパッチから。構造は後から。  principle
+- [ ] `hoto#13` Principle: カバレッジより頻度  principle
+- [ ] `hoto#14` Principle: WF only — サーバー不要  principle
+- [ ] `hoto#15` Principle: Hono と協調  principle
+- [ ] `hoto#16` ADR-001: Hoto 実装言語選定 — TypeScript  adr,stack,workflow
+- [ ] `hoto#17` ADR-002: Hoto データ設計 — SQLite in repo + OpenAPI  adr,stack,workflow
+- [ ] `hoto#18` 01-generate: LLM API で hoto/*.ts を生成する  workflow
+- [ ] `hoto#19` feat: TS type declarations (.d.ts) + rename src/  workflow
+- [ ] `houritsu#3` 衛星リモートセンシング法を収録する  
+- [ ] `houritsu#4` 電波法の収録（衛星通信・周波数割当関連）  
+- [ ] `houritsu#5` 世界モデルに宇宙デブリ・軌道の物理モデルを追加する  
+- [ ] `houritsu#6` JSONルールを実際の判定ロジックとして実装する  
+- [ ] `houritsu#7` 国際宇宙法（宇宙条約・ITU憲章等）の収録方針を決める  kilo-duplicate,kilo-triaged
+- [ ] `idol-lab#2` 研究テーマ：社会の鏡としてのアイドル――グループ名・副題から時代を読む  research
+- [ ] `idol-lab#3` データ収集：年代別グループ名・副題コーパス  data
+- [ ] `idol-lab#4` 分析モデル：グループ名・副題の「ことば工学」  analysis
+- [ ] `idol-lab#5` 年代比較：アイドルの自己定義と時代の空気  research,kilo-triaged,kilo-duplicate
+- [ ] `idol-lab#6` エッセイ：『私たちは何者なのか』4ページ版  writing
+- [ ] `idol-lab#7` 新書『アイドルの変容』：民俗学・オタ活・地縁から知縁へ  research,theory
+- [ ] `idol-oshare#1` スライダー操作バー(サイズ/7テーマ)の実装と選択モデル  
+- [ ] `idol-oshare#2` bbs.htmlのボタンを共通UI(.btn)に統一  
+- [ ] `idol-oshare#3` スマホでパネルが閉じられない問題の完全解消  
+- [ ] `idol-oshare#4` 書き込みAPI(/api/board, /api/note)に任意の共有キー認証を追加  
+- [ ] `idol-oshare#5` BBSの投稿削除・編集機能  
+- [ ] `idol-oshare#6` favicon追加(404解消)  
+- [ ] `idol-oshare#7` projects/image監視の画像自動取込  
+- [ ] `idol-oshare#10` アイテムにcursor:grab追加（ドラッグ可能示唆）  
+- [ ] `idol-oshare#11` fitView復活（全体表示ボタン）  
+- [ ] `idol-oshare#12` スマホでdesc区画を折りたたみ可能に  
+- [ ] `idol-oshare#13` テーマバーのステータス表示改善  
+- [ ] `infrastructure-engineering-ontology-base#1` スタックを勉強潰す：未経験→インフラエンジニア  
+- [ ] `infrastructure-engineering-ontology-base#2` 【voice_bbs】インフラ整備・監視導入  
+- [ ] `infrastructure-engineering-ontology-base#3` 【proxa-go】MCPサーバー本番化  
+- [ ] `infrastructure-engineering-ontology-base#4` 【yosegaki-v2】Cloudflare監視・自動化  
+- [ ] `infrastructure-engineering-ontology-base#5` 【学習】Phase 1: Linux/ネットワーク/コンテナ基盤  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#6` 【学習】Phase 2: AWS/Terraform  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#7` 【資格】AWS SAA-C03 学習スタック  
+- [ ] `infrastructure-engineering-ontology-base#8` 【AWS SAA】VPC / ネットワーク基礎  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#9` 【AWS SAA】EC2 / コンピュート  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#10` 【AWS SAA】RDS / データベース  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#11` 【AWS SAA】S3 / ストレージ  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#12` 【AWS SAA】ELB / ロードバランシング  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#13` 【AWS SAA】IAM / セキュリティ  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#14` 【AWS SAA】CloudWatch / 監視  kilo-duplicate,kilo-triaged
+- [ ] `infrastructure-engineering-ontology-base#15` 【AWS SAA】Terraform / IaC 再現  kilo-duplicate,kilo-triaged
+- [ ] `jade#1` Implement AI-based Crystallization (Plasma -> Crystal)  
+- [ ] `jade#2` Implement MoE Routing and Formula Synthesis  
+- [ ] `jade#3` Implement Core Executor for Crystal Operations  
+- [ ] `jade#4` Implement Delta-Patching Mechanism  
+- [ ] `jade#5` BQMLによるプロンプト自己改善ワークフローの実装  
+- [ ] `jade#6` 評価LOOPをGateプリミティブに再設計 — メタルータ判断レイヤー  
+- [ ] `jade#7` 評価軸の構築こそが最重要 - Jadeの本質はJSONであり、評価が状態を決める  
+- [ ] `jade#8` すべては状態のデータである - プロンプトJSON、生成物+メタデータJSON、BigQuery BQML包括の思想  kilo-triaged,kilo-duplicate
+- [ ] `jade#9` なにが価値が高いかを定義していく - Jadeにおける価値の多層的定義と評価基準  
+- [ ] `jade#10` Defining What Constitutes High Value - Multi-layered Value Definition and Evaluation Criteria in Jade  kilo-triaged,kilo-duplicate
+- [ ] `jade#11` Windows + WSL LM Studio setup script:実機検証  
+- [ ] `jade#12` Jadeを小さなAI Agent Ventureとして育てる  enhancement
+- [ ] `jade#13` Jade Model State: jade.models.db による状態・token・モデル自動調整  enhancement
+- [ ] `jade#14` [Phase 1] Implement Bond Resolver — Crystal traversal (Linear / Parallel / Conditional)  phase 1 / enhancement
+- [ ] `jade#15` [Phase 2] Implement Expert Registry — Crystal registration & categorization for MoE  phase 2 / enhancement
+- [ ] `jade#16` [Phase 3] Jade CLI — Crystal create / test / deploy tool  phase 3 / enhancement
+- [ ] `kaikaikiki-yokai#1` AI Atelier: 仮説→生成→評価→改善の実験ループを実装する  enhancement,ai-atelier
+- [ ] `kamera#1` Reboot v2: Camera → Trace → Turtle → Fab  
+- [ ] `kenchiku-quest#1` feat: FastAPI routers分割 + 環境シミュ + 製図API追加  
+- [ ] `kenchiku-quest#2` feat: 多言語アニメーション統合（Python/Rust/p5.js/TS Canvas）  
+- [ ] `kenpo#1` 引き継ぎ: 次の法令（民法など）へのスタイル設計指針  
+- [ ] `kenpo#2` 反省点: kenpo 構築作業の振り返り  
+- [ ] `kenpo#3` doukou-hou へのスタイル刷新: kenpo 反省点を踏まえて  
+- [ ] `kihonQuest#1` フロントエンドの API 連携を Spring Boot バックエンド向けに修正  
+- [ ] `kihonQuest#2` pom.xml の board モジュール設定を統合・整理する  
+- [ ] `kihonquest-backend#1` GCP Cloud Run へバックエンドをデプロイする  
+- [ ] `kihonquest-backend#2` README・セットアップ手順・Issue/PR テンプレートを整備する  
+- [ ] `kihonquest-backend#3` QuizService の questions.json を runtime 外部ファイル読み込みに対応（Cloud Run 用）  
+- [ ] `kihonquest-vercel#1` Deploy to Vercel  
+- [ ] `life-design#1` hotel-game: スマホ対応テキストゲーム完成  
+- [ ] `mev-bot#4` feat: CI workflowでPNG/SVGチャートを生成してArtifactに出力  
+- [ ] `mito#1` [音声化] mito voice / Handy 連携の実装と改善  音声化
+- [ ] `mudai-notepad-bbs#3` bug: postThread が非アトミック — 同時投稿で1000件超えまたは誤削除の可能性  bug
+- [ ] `music-engine#1` Jog Dial 連続選択UI + バッチ事前計算 + タイプライター出力  enhancement
+- [ ] `music-engine#2` FastAPI: recommend_cache.json 読み込み対応  enhancement
+- [ ] `music-engine#3` FastAPI: recommend_cache.json 読み込み  enhancement,kilo-triaged,kilo-duplicate
+- [ ] `music-engine#4` ジョグダイヤル風 連続選択UI  enhancement
+- [ ] `music-engine#5` 選択後の「考えてる」演出（0.5〜1秒ディレイ）  enhancement
+- [ ] `music-engine#6` タイプライター的 ぼあぼあブロック表示  enhancement
+- [ ] `music-engine#7` 新曲追加UI（既存曲＋追加オプション）  enhancement
+- [ ] `music-engine#8` 全曲リストのJog Dialナビゲーション基盤  enhancement
+- [ ] `music-engine#9` APIキー・設定の環境変数化  enhancement
+- [ ] `music-engine#10` スマホサイズ徹底最適化（モバイルファースト）  enhancement
+- [ ] `music-engine#12` feat(audio): fill_bpm.py — BPM + RMS を songs.sqlite に一括投入  enhancement,audio,p1
+- [ ] `music-engine#13` feat(api): GET /today?mood= — 気分に合う未再生曲を1曲返す  enhancement,p1,api
+- [ ] `music-engine#14` feat(seed): merge_discoveries.py — discoveries.json を songs.sqlite に統合  enhancement,data,p2
+- [ ] `music-engine#15` feat(api): GET /re-listen — play_count≥2 かつ liked=0 の再評価候補リスト  enhancement,api,p2
+- [ ] `music-engine#16` feat(ui): discover.html — /today と /re-listen を叩くシンプル発見UI  enhancement,p2,ui
+- [ ] `music-engine#17` docs: ADR-002 — 発見体験フェーズ1の設計決定記録  documentation,p3
+- [ ] `music-engine#18` feat(seed): songs.sqlite ↔ discoveries.json 統合 — seed() に発掘曲マージ追加  enhancement,kilo-triaged,kilo-duplicate,data,p2
+- [ ] `music-engine#19` feat(audio): audio_features テーブルに librosa 分析データを投入  enhancement,kilo-triaged,kilo-duplicate,audio,p2
+- [ ] `music-engine#20` feat(data): similarity テーブルに composite_score 計算ロジックを接続  enhancement,data,p3
+- [ ] `music-engine#21` feat(metadata): Layer 3 — タイトルパースで Remix / Cover を自動検出  enhancement,p3,metadata
+- [ ] `music-engine#22` arch: audiosr-deploy を REST API サービスとして切り出す  enhancement,p3,architecture
+- [ ] `music-engine#23` arch: cli-visualizer を music-engine から起動できるサービスとして切り出す  enhancement,p3,architecture
+- [ ] `music-engine#24` arch: 子機能切り出し設計 — issue 集約・repo 分離・API 境界の原則を定める  documentation,kilo-triaged,kilo-duplicate,p2,architecture
+- [ ] `music-engine#25` vision: music-engine → music-agent へ — エージェント化のロードマップ  p3,architecture,vision
+- [ ] `music-engine#26` feat(metadata): fill_metadata.py — MusicBrainz から欠損フィールドを一括補完  enhancement,kilo-triaged,kilo-duplicate,p2,metadata
+- [ ] `music-engine#27` feat(metadata): genre_estimate.py — ジャンルなし曲を Last.fm + LLM で推定  enhancement,p2,metadata
+- [ ] `music-engine#28` feat(sync): DB ミラーリング — Last.fm scrobble / Spotify liked を songs.sqlite に反映  enhancement,p2,sync
+- [ ] `music-engine#29` feat(agent): DJ プレイリスト生成 — BPM 連続性・エネルギー曲線・Camelot キーを考慮  enhancement,p2,agent
+- [ ] `music-engine#30` feat(agent): LLM 使用判断ロジック — DB で答えられる質問は LLM を呼ばない  enhancement,p1,agent
+- [ ] `music-engine#31` feat(agent): tips() ツール — エージェントが自分の機能を紹介する  enhancement,p1,agent
+- [ ] `music-engine#32` arch: プラグインインターフェース標準 — CLI repo の作り方を定める  documentation,kilo-triaged,kilo-duplicate,p1,architecture
+- [ ] `music-engine#33` repo: bonsai/music-agent — LLM 音楽相談エージェントを独立 repo として公開  p1,architecture,plugin:music-agent
+- [ ] `music-engine#34` repo: bonsai/fill-bpm — BPM・RMS・スペクトル解析 CLI を独立 repo として公開  kilo-triaged,kilo-duplicate,p2,architecture,plugin:fill-bpm
+- [ ] `music-engine#35` repo: bonsai/genre-estimator — ジャンル推定 CLI を独立 repo として公開  kilo-triaged,kilo-duplicate,p2,architecture,plugin:genre-estimator
+- [ ] `music-engine#36` repo: bonsai/dj-set — DJ プレイリスト生成 CLI を独立 repo として公開  p2,architecture,plugin:dj-set
+- [ ] `music-engine#37` repo: bonsai/karaoke-scorer — 声採点 DSP エンジンを独立 CLI repo として公開  p2,architecture,plugin:karaoke-scorer
+- [ ] `music-engine#38` repo: bonsai/spotify-sync — Spotify プレイリスト同期を独立 CLI repo として公開  p2,architecture,plugin:spotify-sync
+- [ ] `music-engine#39` repo: bonsai/youtube-sync — YouTube プレイリスト同期を独立 CLI repo として公開  kilo-triaged,kilo-duplicate,p2,architecture,plugin:youtube-sync
+- [ ] `music-engine#40` repo: bonsai/mb-enricher — MusicBrainz メタデータ補完を独立 CLI repo として公開  kilo-triaged,kilo-duplicate,p2,architecture,plugin:mb-enricher
+- [ ] `music-engine#41` repo: bonsai/music-discover — ジャンルグラフ→YouTube新曲発掘を独立 CLI repo として公開  kilo-triaged,kilo-duplicate,p2,architecture,plugin:music-discover
+- [ ] `music-engine#42` repo: bonsai/mp3-mcp — MP3 DB 用 MCP サーバーを独立 repo として公開  p3,architecture,plugin:mp3-mcp
+- [ ] `music-engine#43` feat(plugin): services 層再構成 — API 別モジュール分離完了  kilo-triaged,kilo-duplicate,p2,architecture
+- [ ] `myoc#1` PC間設定同期 & プロジェクト進捗ハンズオフ（フェーズ制）  type:config,status:done
+- [ ] `noVNC#1` feat: 手動ズームスライダー + Ctrl+ホイールズーム + フィットモード切替  
+- [ ] `noVNC#2` feat: クリップボード入力時のパスワードマスキング  
+- [ ] `noVNC#3` feat: 閉じる確認ダイアログを無効にする設定  
+- [ ] `noVNC#4` feat: UltraVNC モニター切り替えサポート  
+- [ ] `noVNC#5` feat: FPS/帯域幅モニタリングオーバーレイ  
+- [ ] `opencode-room#1` feat: Agent Research Loop を room の第一級ワークフローにする  enhancement
+- [ ] `opencode-room#2` refactor: soubi を env / tool / skill のコスト最適化レイヤーにする  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `panda#2` Undo機能: 最後の手を取り消せるようにする  
+- [ ] `panda#3` 棋譜保存/読込とリプレイアニメーション  
+- [ ] `panda#4` 盤面サイズ選択: 9×9 / 13×13 / 19×19 対応  
+- [ ] `panda#5` オセロ版の追加 (Othello mode)  
+- [ ] `panda#6` GitHub Actions で自動テスト (CI)  
+- [ ] `portman#1` Support macOS and Linux  
+- [ ] `portman#2` Add port conflict detection  
+- [ ] `portman#3` Add status bar indicator  
+- [ ] `portman#4` Add report export (CSV/JSON)  
+- [ ] `portman#5` Cross-platform auto port conflict avoidance  
+- [ ] `portman#6` Ecosystem definition: Port conflict avoidance for all agents  
+- [ ] `quizplatform2#1` Write chapter 1 stories for all 12 worlds  
+- [ ] `quizplatform2#2` Implement SQLite WASM execution engine  
+- [ ] `quizplatform2#3` Write SCHEMA.md for all remaining 11 worlds  
+- [ ] `quizplatform2#4` Deploy to Cloudflare Pages for zero-cost hosting  
+- [ ] `quizplatform2#5` Build block-style SQL builder UI component  
+- [ ] `rainbow-station#6` UX: 初回オンボーディング改善  
+- [ ] `rainbow-station#7` UX: マップ操作性改善  
+- [ ] `rainbow-station#8` UXフロー: ステップ限定表示  
+- [ ] `rainbow-station#11` UX: フィルム代 — 歩いて稼ぐ写真クレジット  
+- [ ] `rainbow-station#17` UX: 帰る駅だけ決める — 無駄の思想  kilo-triaged,kilo-duplicate
+- [ ] `rainbow-station#18` UX: 最小コマンドセット — 3画面で完結  kilo-triaged,kilo-duplicate
+- [ ] `rainbow-station#20` 削減: コメント入力欄を全削除  
+- [ ] `rainbow-station#21` 削減: PinDetail + Uploaded 画面を統合  
+- [ ] `rainbow-station#31` Recap: ルーレット無限ループ + 確認ダイアログ 実装 (2026-07-03)  
+- [ ] `rainbow-station#32` WebXR: AR写真板 — Hit Test による実世界配置 (ADR-002)  kilo-triaged,kilo-duplicate
+- [ ] `rainbow-station#33` WebXR POC: sliceエラー + デバッグ継続  
+- [ ] `renpy-mcp#1` Ren'Py MCP Server 構築 recap（2026-08-07）  
+- [ ] `renpy-mcp#2` Pygame への応用：renpy-mcp 設計の移植計画  kilo-triaged,kilo-duplicate
+- [ ] `retro-cg-vj#1` MIDI入力の実連携: パラメーターをエフェクトに反映  
+- [ ] `retro-cg-vj#2` エフェクト追加: 3D風トンネル・ロゴスコープ・オシロ  
+- [ ] `shelves#8` next.config.ts — 外部画像ドメイン許可  bug,config
+- [ ] `shikishi#1` [Billing] Stripe連携設定  billing / V3,billing
+- [ ] `shikishi#2` [Billing] サブスクリプションプラン設計  billing / V3,billing
+- [ ] `shikishi#3` [Billing] チェックアウトUI  billing / V3,billing,payment
+- [ ] `shikishi#4` [Billing] カスタマーポータル  billing / V3,billing
+- [ ] `shikishi#5` [Billing] Webhook処理基盤  billing / V3,billing
+- [ ] `shikishi#6` [Billing] プランゲーティング機能  billing / V3,billing,kilo-triaged,kilo-duplicate
+- [ ] `shiritori-battle#1` 特殊カードの効果を実装する  
+- [ ] `shiritori-battle#2` 山札切れのゲーム終了処理  
+- [ ] `shiritori-battle#3` モバイルUIの最適化  
+- [ ] `shiritori-battle#4` プレイヤー切断・再接続のハンドリング  
+- [ ] `shiritori-battle#5` 2人目が参加してもゲームが始まらない handle_info で phase 未更新  
+- [ ] `shiritori-battle#6` debug mode — ?debug=1 で状態表示/Bot操作  
+- [ ] `shizuka#1` Secret Manager: API鍵を一元管理  phase-2
+- [ ] `shizuka#3` BQML recovery_model: ARIMA_PLUS 時系列復帰予測  phase-2
+- [ ] `shizuka#4` BQML recommend_model: XGBOOST モデル推薦  phase-2
+- [ ] `shizuka#5` Cloud Scheduler (3h) → Cloud Functions auto-select  phase-2
+- [ ] `shizuka#6` Looker Studio / Connected Sheets 可視化  phase-2
+- [ ] `shizuka#7` 各CLI設定ファイル更新: Secret Manager 参照  phase-2
+- [ ] `shizuka#8` LM Studio ローカル評価用モデルリスト作成  phase-3
+- [ ] `shizuka#9` ユーザー試験評価テンプレート設計  phase-3
+- [ ] `shizuka#10` 評価実行 + スコアリング (LM Studio)  phase-3,kilo-triaged,kilo-duplicate
+- [ ] `shizuka#11` ランキング生成 + selector.py ローカル対応  phase-3
+- [ ] `shizuka#12` BQML タスク種別分類器 (usage_log → task_type)  phase-4
+- [ ] `shizuka#14` F-11: BigQuery フル稼働確認 + usage_log 書き込み  phase-2
+- [ ] `shizuka#15` F-15: usage_log 自動記録 — Stop hook 連携  phase-2
+- [ ] `shizuka#16` F-17: Source of Truth 統一 — models.agents.md → models.json 自動生成  phase-2
+- [ ] `shizuka#17` F-30: BQ コンテキスト取得チェーン (LangChain tools)  phase-4
+- [ ] `shizuka#18` F-31: 推論チェーン実装 (ReAct / CoT) — 連想的モデル推薦  phase-4
+- [ ] `shizuka#19` F-32: selector.py reason コマンド + MCP mm_reason ツール  phase-4
+- [ ] `shizuka#20` ADR-011: hamachi 統合 — 残高・使用量の一元管理  
+- [ ] `shizuka#21` ADR-012: shizuka MCP を GCP Cloud Run に常駐 + BQ バックエンド本番運用  enhancement
+- [ ] `shizuka#22` feat: BQ GCP モニタリング CLI (bq_monitor.py) 追加  
+- [ ] `shizuka#24` F-12: bq_sync.py — models.db → BQ 定期同期パイプライン  phase-4,kilo-triaged,kilo-duplicate
+- [ ] `shizuka#25` F-14: 自動フォールバック — 無料枠→DeepSeek 自動チェーン  phase-4
+- [ ] `shizuka#26` F-13a: BQML recovery_model -- 復帰時刻予測  phase-4
+- [ ] `shizuka#27` F-13b: BQML recommend_model -- モデル推薦エンジン  phase-4
+- [ ] `shizuka#28` F-12b: Cloud Scheduler -- bq_sync 定期実行  phase-4,kilo-triaged,kilo-duplicate
+- [ ] `shizuka#29` chore: opencode MCP wiring 永続化確認  enhancement
+- [ ] `shizuka#30` dashscope_quota --api crashes because new_models is undefined  
+- [ ] `shizuka#31` dashscope_quota reports checked_at as expired  
+- [ ] `slasher#1` Initial setup: hand-tracking fruit slash game  
+- [ ] `soshiki#1` [project] タスクと従業員/エージェントの割り当て機能  project
+- [ ] `soshiki#2` [pipeline] エージェントパイプラインによる複数プロジェクト同時開発体制  pipeline
+- [ ] `soshiki#3` [workflow] セッション管理・日誌確認・イシュー作成ワークフロー  workflow
+- [ ] `sound-gen#1` 親子対話：音声AIを料理で理解する 全43記事 投稿パイプライン  
+- [ ] `sound-gen#2` Colabでは図を作成する  
+- [ ] `splat#1` Initial setup: splat — hand-tracking territory control  
+- [ ] `step-bq-uploader#1` BQ 挿入失敗時のリトライ・デッドレターキュー対応  
+- [ ] `step-bq-uploader#2` Service 死亡時の自動復帰と Doze / App Standby 対策  
+- [ ] `step-bq-uploader#3` 設定画面と local.properties 外の構成管理対応  
+- [ ] `step-bq-uploader#4` BigQuery Java client のビルドサイズ削減と依存整理  
+- [ ] `stock-bqml#1` Bronze: 株価APIフェッチの本実装（Alpha Vantage or Yahoo Finance）  
+- [ ] `stock-bqml#2` Silver: BQML SQL のテストとパフォーマンスチューニング  
+- [ ] `stock-bqml#3` Gold: BQML XGBoost 学習・予測パイプラインの実行検証  
+- [ ] `stock-bqml#4` Colab: poc_pipeline.ipynb を公開リンク対応にする  
+- [ ] `stock-bqml#5` Silver: 曜日ダミー特徴量追加（DOW effect）  enhancement
+- [ ] `stock-bqml#6` Silver: 月ダミー特徴量追加（Month-of-Year）  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock-bqml#7` Silver: 週・月内パターン特徴量追加  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock-bqml#8` Silver: 連休前売りパターン特徴量（データドリブン）  enhancement
+- [ ] `stock-bqml#9` Silver: 市場全体の投資強気/弱気指標  enhancement
+- [ ] `stock-bqml#10` Silver: 市場全体の投資強気/弱気指標  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock-bqml#11` Silver: 決算前売りパターン特徴量（予備調査）  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock-bqml#12` Gold: アリーナ生存競争の定期実行と可視化  enhancement
+- [ ] `stock-bqml#13` P0: GA Engine — Colabで淘汰・交叉・突然変異ループ  enhancement
+- [ ] `stock-bqml#14` P0: 銘柄スクリーニング — 各戦略が最大3銘柄に絞る  enhancement
+- [ ] `stock-bqml#15` P0: バックログ — トレード履歴テーブル  enhancement
+- [ ] `stock-bqml#16` P1: 帰納的マッピング — 週タイプ×最適戦略の学習  enhancement
+- [ ] `stock-bqml#19` gold: backtest_results テーブル作成 → 戦略精度比較  enhancement
+- [ ] `stock-bqml#20` feat: パイプライン監視エージェント — データ整備状況の把握  enhancement
+- [ ] `stock_agent#1` 【日本株ファンド ¥1,000億】投資戦略 全体管理 — Rev.2 3本柱体制  documentation,enhancement
+- [ ] `stock_agent#2` #2【フィジカルAI】銘柄深掘り・エントリー管理  enhancement
+- [ ] `stock_agent#3` #3【エネルギー転換】銘柄選定・原子炉再稼働モニタリング  enhancement
+- [ ] `stock_agent#4` #4【インバウンド】銘柄選定・万博KPI管理  enhancement
+- [ ] `stock_agent#5` #5【ニッチトップ】価格決定権のある企業 探索軸・銘柄候補  documentation,enhancement
+- [ ] `stock_agent#6` #6【構造化フレームワーク】世界情勢・季節要因・投資判断軸  documentation,enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock_agent#7` [2-1][physical-ai] FANUC 中国リスク・輸出規制感応度分析  2-1 / enhancement
+- [ ] `stock_agent#8` [2-2][physical-ai] キーエンス・安川電機 50日MAエントリー戦略  2-2 / enhancement
+- [ ] `stock_agent#9` [2-3][physical-ai] Nvidia GR00T連携・次世代ロボット銘柄スクリーニング  2-3 / enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock_agent#10` [3-1][energy] 原子炉再稼働スケジュール追跡・銘柄インパクト試算  3-1 / enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock_agent#11` [3-2][energy] AIデータセンター電力需要マップ・受益銘柄特定  3-2 / enhancement
+- [ ] `stock_agent#12` [3-3][energy] 洋上風力入札スケジュール・受注企業追跡  3-3 / enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock_agent#13` [4-1][inbound] 万博・訪日外客KPI 週次モニタリング表  4-1 / enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock_agent#14` [4-2][inbound] USDJPY感応度分析 — ANA・三越伊勢丹 利益影響モデル  4-2 / enhancement
+- [ ] `stock_agent#15` [4-3][inbound] ANA・JR西・三越伊勢丹 決算モニタリング・トリミング管理  4-3 / enhancement
+- [ ] `stock_agent#16` [5-1][niche-top] 財務スクリーニング実行 — 粗利40%・ROE15%・時価総額500〜5000億  5-1 / enhancement
+- [ ] `stock_agent#17` [5-2][niche-top] 最優先候補 深掘り調査 — 浜松ホトニクス・堀場製作所・ハーモニックDS  5-2 / enhancement
+- [ ] `stock_agent#18` [5-3][niche-top] 価格決定力実績データ収集 — 5年間値上げ履歴・粗利率トレンド  5-3 / enhancement
+- [ ] `stock_agent#19` [6-1][framework] 週次レポート自動生成パイプライン設計  6-1 / enhancement
+- [ ] `stock_agent#20` [6-2][framework] 季節性バックテスト — 日経225・テーマETF 過去10年データ  6-2 / enhancement,kilo-duplicate,kilo-triaged
+- [ ] `stock_agent#21` [6-3][framework] 経済カレンダー構造化 — 要因ツリーとイベント重要度スコアリング  6-3 / enhancement
+- [ ] `stock_agent#22` #22【データパイプライン】日次クローラー → BigQuery 全体管理  enhancement,data
+- [ ] `stock_agent#23` [22-1][data-infra] BigQuery スキーマ設計・GCP環境構築  22-1 / enhancement,data
+- [ ] `stock_agent#24` [22-2][crawler] 日次クローラー実装（株価・空売り比率・信用残・USDJPY）  22-2 / enhancement,kilo-duplicate,kilo-triaged,data
+- [ ] `stock_agent#25` [22-3][pipeline] CSV→BigQuery 自動パイプライン（GitHub Actions）  22-3 / enhancement,kilo-duplicate,kilo-triaged,data
+- [ ] `stock_agent#26` [22-4][alpha] 空売り残高トラッキング・週末買い戻し検出モデル  22-4 / enhancement,data
+- [ ] `stock_agent#27` #27【投資戦略】3倍株検出・フィジカルAI集中戦略 明確化  enhancement
+- [ ] `stock_agent#28` #28【バイオAI】AI創薬インパクト調査・銘柄選定  enhancement
+- [ ] `takken-quest#1` feat: クイズ100問 + voice+render自動YouTubeショート  
+- [ ] `tokyo-craftbeer#5` [Security] 本番環境の CORS 設定でワイルドカードを廃止  security / enhancement,security
+- [ ] `tokyo-craftbeer#8` [Quality] PostLunchLog の DB 別 INSERT ブランチを共通化  quality / enhancement
+- [ ] `tokyo-craftbeer#9` [Quality] sns.go の未使用変数 `desc` を削除  quality / enhancement
+- [ ] `tokyo-craftbeer#10` [Quality] 全ハンドラで json.Encode エラーを処理する  quality / enhancement
+- [ ] `tokyo-craftbeer#11` [Quality] frontend/src/lib/api.ts の import 文をファイル先頭に移動  quality / enhancement
+- [ ] `tokyo-craftbeer#12` [Quality] 詳細ページの refresh 失敗時にユーザーへ通知する  quality / enhancement
+- [ ] `tokyo-craftbeer#13` [Chore] バイナリ・DB ファイルをリポジトリから削除して .gitignore に追加  chore / enhancement
+- [ ] `tokyo-craftbeer#14` [Quality] テストの品質改善（エラー処理・並列安全・SNS カバレッジ）  quality / enhancement
+- [ ] `uber-camp#1` 1. YouTube解説動画「Uber配達で月5万稼ぐ方法」  priority-high,cat-A
+- [ ] `uber-camp#2` 2. YouTubeショート「紹介コード入力で5万円もらえる」10秒動画  priority-high,cat-A
+- [ ] `uber-camp#3` 3. TikTok「Uberバイト始めてみた」体験動画  priority-high,cat-A
+- [ ] `uber-camp#4` 4. TikTokライブ「登録方法教えます」  priority-high,cat-A
+- [ ] `uber-camp#5` 5. Instagramリール「副業おすすめ3選」で1番目に配置  priority-high,cat-A
+- [ ] `uber-camp#6` 6. Instagramストーリーズで紹介コード画像を24時間限定配信  priority-high,cat-A
+- [ ] `uber-camp#7` 7. Instagramハイライト「お得情報」に永続化  priority-high,cat-A
+- [ ] `uber-camp#8` 8. X（Twitter）スレッド「Uber配達の裏技全部話す」  priority-high,cat-A
+- [ ] `uber-camp#9` 9. X 固定ツイートに紹介リンク＋報酬額を明記  priority-high,cat-A
+- [ ] `uber-camp#10` 10. Threads で親しみやすく「おすすめ副業」として投稿  priority-high,cat-A
+- [ ] `uber-camp#11` 11. LINE VOOM ショート動画で地元タグ付き投稿  priority-medium,cat-A
+- [ ] `uber-camp#12` 12. LINEスタンプ制作→Uber配達員向け無料配布→プロフにコード記載  priority-medium,cat-A
+- [ ] `uber-camp#13` 13. note 記事「Uber配達1ヶ月目の収支公開」  priority-medium,cat-A
+- [ ] `uber-camp#14` 14. note マガジン開設→定期メルマガ化  priority-medium,cat-A
+- [ ] `uber-camp#15` 15. ブログ「副業ランキング2025」でUberを1位に  priority-medium,cat-A
+- [ ] `uber-camp#16` 16. Qiita「エンジニアの副業」タグで紹介  priority-medium,cat-A
+- [ ] `uber-camp#17` 17. Zenn「稼げる副業技術比較」に混入  priority-medium,cat-A
+- [ ] `uber-camp#18` 18. Snapchat ストーリー「今日から配達員」演出  priority-medium,cat-A
+- [ ] `uber-camp#19` 19. Pinterest インフォグラフィック「Uber登録フロー」  priority-medium,cat-A
+- [ ] `uber-camp#20` 20. Mixi2（復活中）でコミュニティ投稿  priority-medium,cat-A
+- [ ] `uber-camp#21` 21. 繁華街ビラ配り「今すぐ始めて5万円」  priority-medium,cat-B
+- [ ] `uber-camp#22` 22. 大学構内ビラ配り（学食前・図書館前）  priority-medium,cat-B
+- [ ] `uber-camp#23` 23. 専門学校・予備校前で配布（時間が柔軟な層）  priority-medium,cat-B
+- [ ] `uber-camp#24` 24. 駅前ロータリー歩行者に手渡し  priority-medium,cat-B
+- [ ] `uber-camp#25` 25. QRコード付きステッカーを自転車・バイクに貼付  priority-medium,cat-B
+- [ ] `uber-camp#26` 26. コンビニ駐輪場にステッカー貼り（許可取得前提）  priority-medium,cat-B
+- [ ] `uber-camp#27` 27. シェアサイクル（Hello Cycling等）のサドル下にQRシール  priority-medium,cat-B
+- [ ] `uber-camp#28` 28. ガソリンスタンド（バイク給油列）にチラシ置き  priority-medium,cat-B
+- [ ] `uber-camp#29` 29. 洗車場にチラシ＋ステッカー置き配り  priority-medium,cat-B
+- [ ] `uber-camp#30` 30. 駐輪場のポールにマグネットシート貼付（夜間回収）  priority-medium,cat-B
+- [ ] `uber-camp#31` 31. 宅配ボックスに「配達員募集」シール貼り  priority-medium,cat-B
+- [ ] `uber-camp#32` 32. アパート・マンションの郵便受けへポスティング  priority-medium,cat-B
+- [ ] `uber-camp#33` 33. 飲食店の求人コーナーに「配達の方が稼げます」チラシ差し込み  priority-medium,cat-B
+- [ ] `uber-camp#34` 34. 居酒屋・カフェのトイレに貼り紙（店許可必須）  priority-medium,cat-B
+- [ ] `uber-camp#35` 35. 駐車場精算機横にチラシ置き  priority-medium,cat-B
+- [ ] `uber-camp#36` 36. ジム・フィットネスクラブの掲示板に貼り紙  priority-medium,cat-B
+- [ ] `uber-camp#37` 37. 漫画喫茶・ネットカフェの個室掲示板  priority-medium,cat-B
+- [ ] `uber-camp#38` 38. コインパーキングの支払い機に挟み込み  priority-medium,cat-B
+- [ ] `uber-camp#39` 39. デリバリー袋（自作）にQR印刷→持ち歩き配布  priority-medium,cat-B
+- [ ] `uber-camp#40` 40. 傘立てに折り込みチラシ投入  priority-medium,cat-B
+- [ ] `uber-camp#41` 41. 同期・同級生LINEグループへ一斉送信  priority-high,cat-C
+- [ ] `uber-camp#42` 42. 大学サークルLINEグループへ共有  priority-high,cat-C
+- [ ] `uber-camp#43` 43. 同窓会アルバム送付→「近況：Uberやってます」  priority-high,cat-C
+- [ ] `uber-camp#44` 44. 実家の親族LINEグループ（姉弟・いとこ対象）  priority-high,cat-C
+- [ ] `uber-camp#45` 45. ママ友LINEグループ「旦那の副業に」  priority-high,cat-C
+- [ ] `uber-camp#46` 46. 会社の飲み会で口頭紹介＋QR即表示  priority-high,cat-C
+- [ ] `uber-camp#47` 47. 友人の結婚式二次会「失業した人連れてきて」  priority-high,cat-C
+- [ ] `uber-camp#48` 48. ハローワーク待合室で隣の人に話しかける  priority-high,cat-C
+- [ ] `uber-camp#49` 49. 就活生Discordサーバーへ投稿  priority-high,cat-C
+- [ ] `uber-camp#50` 50. 転職サイト（リクナビ・マイナビ）の口コミ欄で言及  priority-high,cat-C
+- [ ] `uber-camp#51` 51. バイト募集掲示板（タウンワーク等）の口コミ機能  priority-high,cat-C
+- [ ] `uber-camp#52` 52. フリーター向けDiscordコミュニティ  priority-high,cat-C
+- [ ] `uber-camp#53` 53. ニート・引きこもり支援SNSで「家から出なくても稼げる」訴求  priority-high,cat-C
+- [ ] `uber-camp#54` 54. 雀荘・ゲームセンターの常連客へ口頭紹介  priority-high,cat-C
+- [ ] `uber-camp#55` 55. バイカー集団（ツーリング仲間）へ紹介  priority-high,cat-C
+- [ ] `uber-camp#56` 56. はてなブログ「副業初心者向けUber完全ガイド」  priority-medium,cat-D
+- [ ] `uber-camp#57` 57. Amebaブログ「主婦でもできた！Uber配達」  priority-medium,cat-D
+- [ ] `uber-camp#58` 58. ワードプレス独自ドメイン「副業比較.jp」作成  priority-medium,cat-D
+- [ ] `uber-camp#59` 59. Googleビジネスプロフィール（地域ブログとして登録）  priority-medium,cat-D
+- [ ] `uber-camp#60` 60. Yahoo!知恵袋「おすすめ副業」への回答  priority-medium,cat-D
+- [ ] `uber-camp#61` 61. 知恵袋で「Uberの始め方」質問を自作自答  priority-medium,cat-D
+- [ ] `uber-camp#62` 62. 教えてgoo同様に自作自答  priority-medium,cat-D
+- [ ] `uber-camp#63` 63. Reddit r/japanlife で外国人向けガイド投稿  priority-medium,cat-D
+- [ ] `uber-camp#64` 64. 5ch（旧2ch）スレ「副業総合」に情報投下  priority-medium,cat-D
+- [ ] `uber-camp#65` 65. FC2ブログ「副収入日記」連載  priority-medium,cat-D
+- [ ] `uber-camp#66` 66. note 有料記事「5万円確実に貰う手順書」  priority-medium,cat-D
+- [ ] `uber-camp#67` 67. ランサーズで「Uber登録代行」（割引コード提供）  priority-medium,cat-D
+- [ ] `uber-camp#68` 68. ココナラで「副業相談」出品→紹介へ誘導  priority-medium,cat-D
+- [ ] `uber-camp#69` 69. メルカリ無料出品「副業情報0円」→自動メッセージでコード送信  priority-medium,cat-D
+- [ ] `uber-camp#70` 70. オークション「始め方マニュアル」落札者へコード配布  priority-medium,cat-D
+- [ ] `uber-camp#71` 71. Instagramストーリーズ広告（地域・年齢ターゲット）  priority-low,cat-E
+- [ ] `uber-camp#72` 72. Facebook/Meta広告「20代向け副業訴求」  priority-low,cat-E
+- [ ] `uber-camp#73` 73. TikTok Spark Ads（自アカウント動画を広告化）  priority-low,cat-E
+- [ ] `uber-camp#74` 74. YouTubeディスカバリー広告（スマホフル画面）  priority-low,cat-E
+- [ ] `uber-camp#75` 75. Google検索広告「Uber 始め方」「副業 おすすめ」  priority-low,cat-E
+- [ ] `uber-camp#76` 76. 地域インフルエンサー（SNS 1–5万フォロワー）に依頼  priority-low,cat-E
+- [ ] `uber-camp#77` 77. 大学内インフルエンサー（キャンパス系アカウント）に依頼  priority-low,cat-E
+- [ ] `uber-camp#78` 78. VTuber・配信者にスポンサー扱いで宣託  priority-low,cat-E
+- [ ] `uber-camp#79` 79. ポッドキャスト「副業ラジオ」にゲスト出演  priority-low,cat-E
+- [ ] `uber-camp#80` 80. 地域フリーペーパー（タウン誌）に小広告掲載  priority-low,cat-E
+- [ ] `uber-camp#81` 81. オリジナル名刺作成「Uber紹介コンシェルジュ」→渡しまくる  priority-medium,cat-F
+- [ ] `uber-camp#82` 82. ポップソケット（スマホグリップ）にQR印刷→リアルで配布  priority-medium,cat-F
+- [ ] `uber-camp#83` 83. Tシャツ自作「Ask me about Uber 5万円」→街中着用  priority-medium,cat-F
+- [ ] `uber-camp#84` 84. エコバッグに大きくQR印刷→買い物で使う  priority-medium,cat-F
+- [ ] `uber-camp#85` 85. ステッカー大量発注（1000枚）→全国郵送で撒く  priority-medium,cat-F
+- [ ] `uber-camp#86` 86. 封筒の裏に印刷→請求書・ハガキ発送時に見えるよう配置  priority-medium,cat-F
+- [ ] `uber-camp#87` 87. 年賀状「今年は副業始めました」→裏面に紹介コード  priority-medium,cat-F
+- [ ] `uber-camp#88` 88. 暑中見舞い・残暑見舞いハガキにQR小さく印刷  priority-medium,cat-F
+- [ ] `uber-camp#89` 89. 引っ越し・転居報告はがきに同梱  priority-medium,cat-F
+- [ ] `uber-camp#90` 90. スマホ待ち受け画面を宣材写真に→人に見せるたび訴求  priority-medium,cat-F
+- [ ] `uber-camp#91` 91. Zoom背景画像に紹介コード入りスライド  priority-medium,cat-F
+- [ ] `uber-camp#92` 92. Googleマップ「自宅」を「Uber相談所」に勝手登録（テスト）  priority-medium,cat-F
+- [ ] `uber-camp#93` 93. Wi-FiのSSIDを「Uber_INTRO_5MAN」に設定  priority-medium,cat-F
+- [ ] `uber-camp#94` 94. AirDropで近くのiPhoneに画像送信（渋谷等混雑地）  priority-medium,cat-F
+- [ ] `uber-camp#95` 95. スペース（X音声ライブ）で「副業相談室」開設→毎回宣伝  priority-medium,cat-F
+- [ ] `uber-camp#96` 96. 自分が配達員になり、待機中に他配達員（出前館・menu）に勧誘  priority-low,cat-G
+- [ ] `uber-camp#97` 97. 飲食店店長に「配達員紹介します」→紹介コード使わせる  priority-low,cat-G
+- [ ] `uber-camp#98` 98. 友人の会社の「福利厚生・副業紹介ページ」に掲載依頼  priority-low,cat-G
+- [ ] `uber-camp#99` 99. 自治体の「働き方改革」イベントに出展・参加して口頭訴求  priority-low,cat-G
+- [ ] `uber-camp#100` 100. **100人目の紹介達成記念動画を作り、それが新たな1本目になる**  priority-low,cat-G
+- [ ] `uber-novels#1` キャラクター設計：動物キャストの確定  p0-今すぐ
+- [ ] `uber-novels#2` 世界観設定：歌舞伎町の配達員  p0-今すぐ
+- [ ] `uber-novels#3` 創作指針：「シュール×共感×感謝」  p0-今すぐ
+- [ ] `uber-novels#4` 量産パイプライン設計：テキスト→レビュー→画像生成  p0-今すぐ
+- [ ] `uber-novels#5` プロットフォーマット策定  p1-テキスト量産
+- [ ] `uber-novels#6` レビュー運用ルール  p1-テキスト量産
+- [ ] `uber-novels#7` 画像生成：SDXL + Colab GPU + Pillow合成  p2-画像生成
+- [ ] `uber-novels#8` 多言語対応設計（後日）  p3-展開
+- [ ] `uber-novels#9` 動画制作・3字幕焼き込み（後日）  p3-展開
+- [ ] `uber-novels#10` Twitter運用設計  p3-展開
+- [ ] `uber-novels#11` アナリティクスダッシュボード（後日）  p3-展開
+- [ ] `uber-novels#12` 品質ライン策定  p1-テキスト量産
+- [ ] `uber-novels#13` ウーバーネタの多角化  p3-展開
+- [ ] `virtual-law-platform#1` 🚀 Cloudflare Pages デプロイ検証  deployment,priority:high
+- [ ] `virtual-law-platform#2` ⚙️ Worker API デプロイ（Hono + LLM統合）  deployment,priority:high
+- [ ] `virtual-law-platform#3` 🔐 環境変数・セキュリティ設定  priority:high,security
+- [ ] `virtual-law-platform#4` 🌐 カスタムドメイン設定  deployment,priority:medium
+- [ ] `virtual-law-platform#5` 🗄️ D1データベース移行（state.json → D1）  enhancement,priority:medium
+- [ ] `virtual-law-platform#6` 🔄 CI/CDパイプライン改善  enhancement,priority:medium,kilo-duplicate,kilo-triaged
+- [ ] `virtual-law-platform#7` 📊 監視・ログ体制構築  enhancement,priority:low
+- [ ] `vj-blocks#1` 🎤 マイク音声入力に同期する  
+- [ ] `vj-blocks#2` 🧪 CI test workflow — JS syntax validation  
+- [ ] `vj-blocks#8` Camera page: no loading state or CDN error handling  enhancement
+- [ ] `voice_bbs#6` 残タスク: モバイルPWA対応・管理者機能  
+- [ ] `voice_bbs#11` 接続切断時にグレースケールオーバーレイ  enhancement
+- [ ] `voice_bbs#12` しりとり: 言葉が繋がらないときグレースケール化  enhancement
+- [ ] `voodoo-todo#102` タスク ピザ  bug,p3
+- [ ] `voodoo-todo#107` 来週の金曜に宮原さんとランチの予定を入れて  
+- [ ] `voodoo-todo#109` コードメタデータ辞書の整備 — LLM がソース全読みしなくても構造がわかるように  p0,idea,hot
+- [ ] `voodoo-todo#110` 重みだけが価値である  p1,idea,hot
+- [ ] `voodoo-todo#111` Colab ↔ voodoo-todo インタラクションプロトコルの定義  p1,task
+- [ ] `voodoo-todo#112` プロンプトいずイシュー — 有効なプロンプトを issue として保存・再利用する仕組み  p0,idea,hot
+- [ ] `voodoo-todo#113` raw-intake-chan — wiki/raw/ と ideas/ からイシューを拾い上げるエージェント  p1,idea
+- [ ] `voodoo-todo#114` gh repo管理ちゃん — bonsai org のリポジトリ整理エージェント  p2,idea
+- [ ] `voodoo-todo#115` 拡張管理ちゃん — VSCode/ブラウザ拡張・CLIツールのバージョン追跡エージェント  p2,idea
+- [ ] `voodoo-todo#116` soubi管理ちゃん — inventory-tui/soubi.go と連携した装備管理エージェント  p2,idea
+- [ ] `voodoo-todo#117` hisho-chan 実装 — MEGA/.claude/agents/hisho.md 作成  p1,task
+- [ ] `voodoo-todo#118` t コマンド実装 — gh issue の fzf ラッパー (tickets.sh エッセンス)  p1,task
+- [ ] `voodoo-todo#119` エージェントエコシステム構造図  p0,idea
+- [ ] `voodoo-todo#120` 七賢人スキルを curator-chan synthesis フェーズに組み込む  p1,idea,hot
+- [ ] `voodoo-todo#121` 旧みとちゃん(TypeScript版)から OAuth 知見を吸い出す  p2,task
+- [ ] `voodoo-todo#122` Drucker の KANBAN.db から未完了タスクを GH Issues にマイグレーション  p2,task
+- [ ] `voodoo-todo#123` 写楽スキル vs jacket-eye — VLM 役割整理  p2,idea
+- [ ] `voodoo-todo#124` 夏目・星新一スキルを wiki/blog と hermes 創作に活用  p2,idea
+- [ ] `voodoo-todo#125` 弁慶のモデル管理機能を model-manager スキルに完全移行・benkey.exe 廃止判断  p2,task
+- [ ] `voodoo-todo#126` 啄木・寅彦・松岡スキルの廃止決定  p3,task
+- [ ] `voodoo-todo#127` Drucker の evolution.go — 自律的組織進化システムの設計を読んで継承判断  p2,idea
+- [ ] `voodoo-todo#128` 【起案】Hermes 前提アーキテクチャへの組み直し  p0,idea,hot
+- [ ] `voodoo-todo#129` jisso-chan をエージェントプールに — crush/opencode/Claude Code を Hermes が制御  kilo-duplicate,kilo-triaged,p0,idea,hot
+- [ ] `voodoo-todo#130` 【設計変更】みとちゃんが intake / hisho / curator を吸収 — エージェント統合  kilo-duplicate,kilo-triaged,p0,idea,hot
+- [ ] `voodoo-todo#131` 【起案】API ローテーター — 無料枠優先・DeepSeek 有料フォールバック  p1,idea,hot
+- [ ] `voodoo-todo#132` 【起案】記号化・視認性設計 — 人間は具体が好き、AIは抽象が好き  p1,idea
+- [ ] `voodoo-todo#134` GitHub Pages ダッシュボード — Issues を Kanban として常時表示  p1,idea,hot
+- [ ] `wagashi-crush#1` B1: Click detection uses wrong coordinate space  bug,critical
+- [ ] `wagashi-crush#2` B2: Re-selecting non-adjacent tile immediately deselects  bug,critical
+- [ ] `wagashi-crush#3` B3: Vertical matches missed when crossing horizontal match  bug,critical
+- [ ] `wagashi-crush#4` B4: Maze-Maze whisk input fires across entire screen  bug,high
+- [ ] `wagashi-crush#5` B5: Hidden tile nodes leak memory each cascade  bug,high
+- [ ] `wagashi-crush#6` B6: First whisk frame causes speed spike  bug,high
+- [ ] `wagashi-crush#7` B7: Timer ticks during match animations (unfair in time attack)  bug,medium
+- [ ] `wagashi-crush#8` B8: Cascade animation may not finish before input re-enabled  bug,medium
+- [ ] `wagashi-crush#12` B12: Initial match re-roll visible to player  bug,low
+- [ ] `wagashi-crush#13` B8: Cascade animation may not finish before input re-enabled  bug,medium,kilo-triaged,kilo-duplicate
+- [ ] `weekly-scheduler#1` 1日6h・12タブ形式に対応 / 指示書フロー1枚mdを作成  enhancement
+- [ ] `wf-errors#2` Phase 1-3 全体TODO  
+- [ ] `wf-errors#3` collect.sh を Python に移行  
+- [ ] `wf-errors#4` collect_bq.sh を Python に移行  kilo-triaged,kilo-duplicate
+- [ ] `wf-errors#5` collect_go を Python に移行  kilo-triaged,kilo-duplicate
+- [ ] `wf-errors#6` 各repoに error reporting を導入  
+- [ ] `wf-errors#7` Judge層: action_rules + action_log  
+- [ ] `wf-errors#8` Act層: debug_agent (AI auto-fix)  
+- [ ] `wf-errors#9` collect_py.py の hamachi 依存除去  
+- [ ] `wf-errors#10` [mev-bot] backup: add recap.md...  mev-bot / wf-task-force
+- [ ] `wf-errors#11` [compeitou-rb] chore(deps): bump rails from 8.1.3 to 8....  compeitou-rb / wf-task-force
+- [ ] `wf-errors#12` [virtual-law-platform] UX改善: 生成経路表示をhidden化、入力案内を短縮、イシュー完了更新...  virtual-law-platform / wf-task-force
+- [ ] `wf-errors#13` [stock-bqml] gh-pages...  stock-bqml / wf-task-force
+- [ ] `wf-errors#14` [sbBBS] Add README with system architecture diag...  sbbbs / wf-task-force
+- [ ] `wiki#1` [idea] sf-concept  idea / idea
+- [ ] `wiki#2` [todo] sync-datum-test  todo / todo
+- [ ] `wiki#24` [issue] #14-2次データ処理・保存戦略-バッチワークフロー設計  issue / issue
+- [ ] `wiki#25` [issue] #90-adr-agent-実行環境の整理-ローカル-vs-クラウド  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#26` [issue] #88-adr-issue-コンパクション閾値の決定  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#27` [issue] #91-adr-voodoo-todo-agent-pages-dev-の位置づけ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#28` [issue] #20-ai-api-プロバイダー総合リサーチ  issue / issue
+- [ ] `wiki#29` [issue] #69-baku-mcp-ファイル消失-再ビルド-or-削除判断  issue / issue
+- [ ] `wiki#30` [issue] #41-bbs永続化バックエンド-neon-supabase-現状in-memory  issue / issue
+- [ ] `wiki#31` [issue] #72-benkei-benkey-serve-mcp-有効化判断  issue / issue
+- [ ] `wiki#32` [issue] #29-ci-cd-パイプライン-github-actions  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#33` [issue] #98-claude-md-リファクタリング  issue / issue
+- [ ] `wiki#34` [issue] #77-codex-local-mcp登録-portman-llama-mcp-qwen-file-agent-を-openco  issue / issue
+- [ ] `wiki#35` [issue] #111-colab-voodoo-todo-インタラクションプロトコルの定義  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#36` [issue] #10-connpass-マイクライアント開発  issue / issue
+- [ ] `wiki#37` [issue] #74-coquille-todo-md-全136タスクのp0-p1-p2分類-lsp-ast-統合-etc  issue / issue
+- [ ] `wiki#38` [issue] #13-database-選定-adr-作成  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#39` [issue] #57-db-jsonエクスポート-mcpアクセス  issue / issue
+- [ ] `wiki#40` [issue] #58-dbをhtml-wasm-sql-js-で可視化  issue / issue
+- [ ] `wiki#41` [issue] #48-deploy-railway-vercel-adr-003決定待ち  issue / issue
+- [ ] `wiki#42` [issue] #30-dopeness-web-卒業イベント最終調整・デプロイ確認-2026-06-06  issue / issue
+- [ ] `wiki#43` [issue] #71-drucker-mcp-serve-mcp-有効化判断  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#44` [issue] #127-drucker-の-evolution-go-自律的組織進化システムの設計を読んで継承判断  issue / issue
+- [ ] `wiki#45` [issue] #122-drucker-の-kanban-db-から未完了タスクを-gh-issues-にマイグレーション  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#46` [issue] #70-eisenstein-mcp-同上  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#47` [issue] #44-get-api-health  issue / issue
+- [ ] `wiki#48` [issue] #114-gh-repo管理ちゃん-bonsai-org-のリポジトリ整理エージェント  issue / issue
+- [ ] `wiki#49` [issue] #134-github-pages-ダッシュボード-issues-を-kanban-として常時表示  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#50` [issue] #22-github-ボット統合-自動化ワークフロー  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#51` [issue] #3-google-drive-シンク機能の実装  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#52` [issue] #117-hisho-chan-実装-mega-claude-agents-hisho-md-作成  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#53` [issue] #47-ipレート制限・v2課金機能  issue / issue
+- [ ] `wiki#54` [issue] #27-issue-テキストファイル化-adr-google-drive-同期  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#55` [issue] #25-issue-依存関係グラフ可視化-pc-html  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#56` [issue] #87-issue-数増加に伴うパフォーマンス対策  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#57` [issue] #23-issue-最適化・管理戦略  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#58` [issue] #53-issues-62件-の優先順位付けとp0-p1-p2分類  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#59` [issue] #66-jacket-eye-go-vlmモデル選定-画面自動キャプチャ-melon-sound連携-renderデプロイ  issue / issue
+- [ ] `wiki#60` [issue] #129-jisso-chan-をエージェントプールに-crush-opencode-claude-code-を-hermes-が  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#61` [issue] #73-kanban-go-のkanban-mdパーサー運用  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#62` [issue] #55-kanban-mandara-最新化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#63` [issue] #76-kanban-viewer-tui-改善  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#64` [issue] #31-led-board-led-board-lite-イベントモード完成・本番投入  issue / issue
+- [ ] `wiki#65` [issue] #86-llm-振り分けルール-優先度ベースの3段階クラス分け  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#66` [issue] #80-local-llm-mcp-llama-cpp経由-有効化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#67` [issue] #52-make-video-py-パフォーマンス改善  issue / issue
+- [ ] `wiki#68` [issue] #54-mastra-yume2kanban-エージェント本番運用開始  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#69` [issue] #64-masurao-kanbanツール-analyze-suggest-improvement-record-waste-s  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#70` [issue] #35-match-play-turn-実装  issue / issue
+- [ ] `wiki#71` [issue] #36-match-start-実装  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#72` [issue] #65-melon-sound-共有基盤-ringbuffer-vad-stft-voice-id-楽譜作成-wasapi  issue / issue
+- [ ] `wiki#73` [issue] #26-ml-基礎知識キャッチアップ-issue-15-前提  issue / issue
+- [ ] `wiki#74` [issue] #92-mvc-再構成-ui-db-agent-の整理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#75` [issue] #67-news-server-perl-plagger版検討-config-yaml-led-boardプロキシ経由確認  issue / issue
+- [ ] `wiki#76` [issue] #6-opencode-crush-の-api-key-管理システム  issue / issue
+- [ ] `wiki#77` [issue] #63-othello-icon-godot可視化-勝率統計-リプレイ機能  issue / issue
+- [ ] `wiki#78` [issue] #62-othello-icon-ゲームデザインプロンプト-コンテストオーケストレーター  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#79` [issue] #61-othello-icon-動的ゲーム定義フォーマット設計-game-registry拡張-cli-web  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#80` [issue] #68-plego-filter-publish-subscription-プラグイン実装-ci-cd-docker-テスト  issue / issue
+- [ ] `wiki#81` [issue] #42-post-api-message-統一-json  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#82` [issue] #78-proxa-java環境整備して-enable  issue / issue
+- [ ] `wiki#83` [issue] #81-pyper-llm-mcp-wsl連携-試運転  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#84` [issue] #113-raw-intake-chan-wiki-raw-と-ideas-からイシューを拾い上げるエージェント  issue / issue
+- [ ] `wiki#85` [issue] #51-sakura-api-key-font-generator-16-16漢字  issue / issue
+- [ ] `wiki#86` [issue] #1-setup-task-management  issue / issue
+- [ ] `wiki#87` [issue] #116-soubi管理ちゃん-inventory-tui-soubi-go-と連携した装備管理エージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#88` [issue] #37-sseブロードキャスト統合  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#89` [issue] #32-suno-mcp-playwright-ブラウザインストール-playwright-install-chromium  issue / issue
+- [ ] `wiki#90` [issue] #118-t-コマンド実装-gh-issue-の-fzf-ラッパー-tickets-sh-エッセンス  issue / issue
+- [ ] `wiki#91` [issue] #33-task-crawler-定期実行-windows-scheduled-task-設定  issue / issue
+- [ ] `wiki#92` [issue] #79-tts-sakura-mcp-有効化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#93` [issue] #49-url-hash入力-localstorage連携-1-html完結  issue / issue
+- [ ] `wiki#94` [issue] #11-voodoo-agent-openapi-スキーマ定義  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#95` [issue] #8-voodoo-agent-の作成-イシュー分析・推奨エージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#96` [issue] #12-voodoo-todo-prd-adr-ux-ドキュメント作成  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#97` [issue] #19-voodoo-todo-インタラクティブ作成-mcp-サーバー  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#98` [issue] #21-voodoo-クライアント設計-雑多-行動提案  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#99` [issue] #97-vs-code-エージェント-入力をイシュー化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#100` [issue] #75-wiki-raw-日報システム定着  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#101` [issue] #56-yumeya-kanban-issues-設計書クラスター整理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#102` [issue] #7-お得な-ai-api-の調査・追加  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#103` [issue] #94-お酒づくりゲーム企画-アクションパズル  issue / issue
+- [ ] `wiki#104` [issue] #45-イベントモード切替・履歴保存・qr生成  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#105` [issue] #17-インターフェース統一化-認知コスト最小化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#106` [issue] #101-エージェント-イシュー-リオーガナイズ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#107` [issue] #119-エージェントエコシステム構造図  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#108` [issue] #84-クラウドバックアップサービス調査・契約  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#109` [issue] #109-コードメタデータ辞書の整備-llm-がソース全読みしなくても構造がわかるように  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#110` [issue] #102-タスク-ピザ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#111` [issue] #4-チケットメタタグの検討・設計  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#112` [issue] #99-ツール使用スコープの定義  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#113` [issue] #85-テキスト処理の最適化-ローカル-ローコスト-llm-活用  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#114` [issue] #28-テスト戦略-ユニット・統合・e2e  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#115` [issue] #15-トークンレス自律-ml-モデル開発-イシュー分析エンジン  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#116` [issue] #112-プロンプトいずイシュー-有効なプロンプトを-issue-として保存・再利用する仕組み  issue / issue
+- [ ] `wiki#117` [issue] #100-マルチクライアント計画  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#118` [issue] #43-メッセージキュー-priority制御  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#119` [issue] #24-モバイル-pages-スマホ入力-llm-バッチ処理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#120` [issue] #59-ユーザーペイン検出ツール  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#121` [issue] #120-七賢人スキルを-curator-chan-synthesis-フェーズに組み込む  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#122` [issue] #9-上尾でバイク取り-6-13-予約  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#123` [issue] #18-不満・アイデア-プロダクトプロンプト変換スキル  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#124` [issue] #82-不要sqlite-crush-等-掃除  issue / issue
+- [ ] `wiki#125` [issue] #93-全体アーキテクチャ見取り図-model-view-controller  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#126` [issue] #123-写楽スキル-vs-jacket-eye-vlm-役割整理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#127` [issue] #83-各プロジェクト-kanban-md-の自動最新化ci-cd  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#128` [issue] #65-melon-sound-共有基盤-ringbuffer-vad-stft-voice-id-楽譜作成-wasapi  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#129` [issue] #126-啄木・寅彦・松岡スキルの廃止決定  issue / issue
+- [ ] `wiki#130` [issue] #26-ml-基礎知識キャッチアップ-issue-15-前提  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#131` [issue] #2-堺化学工業についてリサーチする  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#132` [issue] #92-mvc-再構成-ui-db-agent-の整理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#133` [issue] #124-夏目・星新一スキルを-wiki-blog-と-hermes-創作に活用  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#134` [issue] #67-news-server-perl-plagger版検討-config-yaml-led-boardプロキシ経由確認  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#135` [issue] #96-宮原ランチ情報収集  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#136` [issue] #6-opencode-crush-の-api-key-管理システム  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#137` [issue] #40-対戦リスト・詳細ページ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#138` [issue] #34-opencode-再起動して-mcp14-が正しく起動するか確認  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#139` [issue] #125-弁慶のモデル管理機能を-model-manager-スキルに完全移行・benkey-exe-廃止判断  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#140` [issue] #63-othello-icon-godot可視化-勝率統計-リプレイ機能  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#141` [issue] #60-投資機会判定アルゴリズム  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#142` [issue] #62-othello-icon-ゲームデザインプロンプト-コンテストオーケストレーター  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#143` [issue] #115-拡張管理ちゃん-vscode-ブラウザ拡張・cliツールのバージョン追跡エージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#144` [issue] #61-othello-icon-動的ゲーム定義フォーマット設計-game-registry拡張-cli-web  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#145` [issue] #16-既存モデル調査-issue-分析機能-ollama-互換  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#146` [issue] #68-plego-filter-publish-subscription-プラグイン実装-ci-cd-docker-テスト  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#147` [issue] #121-旧みとちゃん-typescript版-から-oauth-知見を吸い出す  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#148` [issue] #42-post-api-message-統一-json  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#149` [issue] #107-来週の金曜に宮原さんとランチの予定を入れて  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#150` [issue] #78-proxa-java環境整備して-enable  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#151` [issue] #5-用語の柔軟な許容設計  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#152` [issue] #81-pyper-llm-mcp-wsl連携-試運転  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#153` [issue] #46-絵文字ピッカー・寄せ書きモード  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#154` [issue] #113-raw-intake-chan-wiki-raw-と-ideas-からイシューを拾い上げるエージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#155` [issue] #38-観戦用htmlテンプレート  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#156` [issue] #51-sakura-api-key-font-generator-16-16漢字  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#157` [issue] #39-観戦用web-ui-html-css-js  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#158` [issue] #1-setup-task-management  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#159` [issue] #130-設計変更-みとちゃんが-intake-hisho-curator-を吸収-エージェント統合  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#160` [issue] #116-soubi管理ちゃん-inventory-tui-soubi-go-と連携した装備管理エージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#161` [issue] #131-起案-api-ローテーター-無料枠優先・deepseek-有料フォールバック  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#162` [issue] #37-sseブロードキャスト統合  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#163` [issue] #128-起案-hermes-前提アーキテクチャへの組み直し  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#164` [issue] #32-suno-mcp-playwright-ブラウザインストール-playwright-install-chromium  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#165` [issue] #132-起案-記号化・視認性設計-人間は具体が好き-aiは抽象が好き  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#166` [issue] #118-t-コマンド実装-gh-issue-の-fzf-ラッパー-tickets-sh-エッセンス  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#167` [issue] #89-週次レトロスペクティブエージェント-weekly-retro  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#168` [issue] #33-task-crawler-定期実行-windows-scheduled-task-設定  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#169` [issue] #110-重みだけが価値である  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#170` [issue] #79-tts-sakura-mcp-有効化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#171` [issue] #49-url-hash入力-localstorage連携-1-html完結  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#172` [issue] #50-重複ui削除-ledboardpage-tsx統合  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#173` [issue] #11-voodoo-agent-openapi-スキーマ定義  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#174` [log] paste_1_094600  log / log
+- [ ] `wiki#175` [issue] #8-voodoo-agent-の作成-イシュー分析・推奨エージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#176` [log] paste_1_111858  log / log
+- [ ] `wiki#177` [issue] #12-voodoo-todo-prd-adr-ux-ドキュメント作成  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#178` [log] paste_1_133152  log / log
+- [ ] `wiki#179` [issue] #19-voodoo-todo-インタラクティブ作成-mcp-サーバー  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#180` [log] paste_1_152553  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#181` [issue] #21-voodoo-クライアント設計-雑多-行動提案  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#182` [log] paste_1_173818  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#183` [issue] #97-vs-code-エージェント-入力をイシュー化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#184` [log] paste_1_181222  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#185` [issue] #75-wiki-raw-日報システム定着  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#186` [log] paste_2_095712  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#187` [log] paste_2_104925  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#188` [issue] #56-yumeya-kanban-issues-設計書クラスター整理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#189` [log] paste_2_112202  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#190` [issue] #7-お得な-ai-api-の調査・追加  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#191` [log] paste_2_153427  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#192` [issue] #94-お酒づくりゲーム企画-アクションパズル  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#193` [log] paste_3_111102  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#194` [issue] #45-イベントモード切替・履歴保存・qr生成  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#195` [log] paste_3_112359  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#196` [issue] #17-インターフェース統一化-認知コスト最小化  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#197` [log] paste_4_112405  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#198` [issue] #101-エージェント-イシュー-リオーガナイズ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#199` [log] paste_4_131716  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#200` [issue] #119-エージェントエコシステム構造図  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#201` [log] paste_5_130231  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#202` [issue] #84-クラウドバックアップサービス調査・契約  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#203` [log] paste_5_133013  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#204` [issue] #109-コードメタデータ辞書の整備-llm-がソース全読みしなくても構造がわかるように  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#205` [log] paste_6_131224  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#206` [issue] #102-タスク-ピザ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#207` [log] paste_7_131232  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#208` [issue] #4-チケットメタタグの検討・設計  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#209` [log] paste_8_131501  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#210` [issue] #99-ツール使用スコープの定義  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#211` [log] paste_9_131803  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#212` [issue] #85-テキスト処理の最適化-ローカル-ローコスト-llm-活用  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#213` [issue] #28-テスト戦略-ユニット・統合・e2e  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#214` [issue] #15-トークンレス自律-ml-モデル開発-イシュー分析エンジン  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#215` [issue] #112-プロンプトいずイシュー-有効なプロンプトを-issue-として保存・再利用する仕組み  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#216` [issue] #100-マルチクライアント計画  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#217` [issue] #43-メッセージキュー-priority制御  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#218` [issue] #24-モバイル-pages-スマホ入力-llm-バッチ処理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#219` [issue] #59-ユーザーペイン検出ツール  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#220` [issue] #120-七賢人スキルを-curator-chan-synthesis-フェーズに組み込む  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#221` [issue] #9-上尾でバイク取り-6-13-予約  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#222` [issue] #18-不満・アイデア-プロダクトプロンプト変換スキル  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#223` [issue] #82-不要sqlite-crush-等-掃除  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#224` [issue] #93-全体アーキテクチャ見取り図-model-view-controller  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#225` [issue] #123-写楽スキル-vs-jacket-eye-vlm-役割整理  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#226` [issue] #83-各プロジェクト-kanban-md-の自動最新化ci-cd  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#227` [issue] #126-啄木・寅彦・松岡スキルの廃止決定  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#228` [issue] #2-堺化学工業についてリサーチする  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#229` [issue] #124-夏目・星新一スキルを-wiki-blog-と-hermes-創作に活用  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#230` [issue] #96-宮原ランチ情報収集  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#231` [issue] #40-対戦リスト・詳細ページ  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#232` [issue] #125-弁慶のモデル管理機能を-model-manager-スキルに完全移行・benkey-exe-廃止判断  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#233` [issue] #60-投資機会判定アルゴリズム  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#234` [issue] #115-拡張管理ちゃん-vscode-ブラウザ拡張・cliツールのバージョン追跡エージェント  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#235` [issue] #16-既存モデル調査-issue-分析機能-ollama-互換  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#236` [issue] #121-旧みとちゃん-typescript版-から-oauth-知見を吸い出す  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#237` [issue] #107-来週の金曜に宮原さんとランチの予定を入れて  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#238` [issue] #5-用語の柔軟な許容設計  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#239` [issue] #46-絵文字ピッカー・寄せ書きモード  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#240` [issue] #38-観戦用htmlテンプレート  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#241` [issue] #39-観戦用web-ui-html-css-js  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#242` [issue] #130-設計変更-みとちゃんが-intake-hisho-curator-を吸収-エージェント統合  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#243` [issue] #131-起案-api-ローテーター-無料枠優先・deepseek-有料フォールバック  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#244` [issue] #128-起案-hermes-前提アーキテクチャへの組み直し  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#245` [issue] #132-起案-記号化・視認性設計-人間は具体が好き-aiは抽象が好き  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#246` [issue] #89-週次レトロスペクティブエージェント-weekly-retro  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#247` [issue] #110-重みだけが価値である  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#248` [issue] #50-重複ui削除-ledboardpage-tsx統合  issue / issue,kilo-duplicate,kilo-triaged
+- [ ] `wiki#249` [log] paste_1_094600  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#250` [log] paste_1_111858  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#251` [log] paste_1_133152  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#252` [log] paste_1_152553  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#253` [log] paste_1_173818  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#254` [log] paste_1_181222  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#255` [log] paste_2_095712  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#256` [log] paste_2_104925  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#257` [log] paste_2_112202  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#258` [log] paste_2_153427  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#259` [log] paste_3_111102  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#260` [log] paste_3_112359  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#261` [log] paste_4_112405  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#262` [log] paste_4_131716  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#263` [log] paste_5_130231  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#264` [log] paste_5_133013  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#265` [log] paste_6_131224  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#266` [log] paste_7_131232  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#267` [log] paste_8_131501  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#268` [log] paste_9_131803  log / log,kilo-duplicate,kilo-triaged
+- [ ] `wiki#269` データは世界を抽象したものである  
+- [ ] `wiki#270` Agent = DB -> DB  
+- [ ] `wiki#271` LLM に状態を持たせるな。DB が覚えている。  
+- [ ] `wiki#272` エージェント間で会話するな。DB に書け。  
+- [ ] `wiki#273` 設定を同期するな。DB が真実だ。  
+- [ ] `wiki#274` ファイルに保存するな。DB に書け。  
+- [ ] `wiki#275` 引き継ぎをするな。起動して DB を読め。  kilo-duplicate,kilo-triaged
+- [ ] `wiki#276` 複数インスタンスを考えるな。1つで足りる。  
+- [ ] `wiki#277` LLM は String -> String。フレームワークは不要だ。型が教えてくれる。  
+- [ ] `wiki#278` 考えるな。変換せよ。状態を持つな。流せ。抽象するな。写像せよ。  
+- [ ] `wiki#279` あなたのコードはデータです。あなたのデータは世界です。あなたの世界は DB です。  
+- [ ] `wiki#280` OOP はものの世界。FP は変換の世界。我々は変換を選ぶ。  
+- [ ] `wiki#282` BQML Cluster-A: コアドキュメント weight=0.9  
+- [ ] `wiki#283` BQML Cluster-B: 教育コンテンツ weight=0.7  kilo-duplicate,kilo-triaged
+- [ ] `wiki#284` BQML Cluster-C: タスク群 weight 再配分  kilo-duplicate,kilo-triaged
+- [ ] `wiki#285` BQML Cluster-D: ログ weight=0.3 最適化  kilo-duplicate,kilo-triaged
+- [ ] `wiki#286` BQML Cluster-E: プロジェクト分散検出  横断分析
+- [ ] `wiki#288` モデルルーター3層設計: Zen無料 / Go定額 / Sakura従量  
+- [ ] `wiki#289` Avira/Avast アンインストール + Windows Defender 復旧  
+- [ ] `wiki#290` buffett_agent.py: model_type slug mismatches ModelPlatformType.OPENAI  
+- [ ] `wiki#291` buffett_agent.py: crashes when msgs is empty or content is None  
+- [ ] `wiki#292` buffett_agent.py: missing API key handling and unclear failures  
+- [ ] `wiki#293` buffett_agent.py: free-form output not machine-parseable  
+- [ ] `wiki#294` buffett_agent.py: rebuilds agent+model on every call  
+- [ ] `wiki#295` python-method-4koma 動画生成の完遂  
+- [ ] `wiki#296` tenx-screener 外部データ接続  
+- [ ] `wiki#297` garden-agent 停滞seed抽出実装  
+- [ ] `wiki#298` projects リポジトリ prune 実行  
+- [ ] `wiki#299` emoji-shiritori PWA アイコン最適化  
+- [ ] `wiki#300` ローカル情報を把握したい（golang/json）  idea
+- [ ] `wiki#301` LLMWIKI-DBをDATAにしてkotlinでモバイルアプリ化（さくらAPI）  idea
+- [ ] `wiki#302` JAVAの授業を小学生のためのJAVAとしてリライトする（作業日記/単語帳/ゲーム）  idea
+- [ ] `wiki#303` クイズプラットフォームの設計（postgres/react/ruby mysql python java）  idea
+- [ ] `wiki#304` 予約ツール ラインミニアプリでTS オーダーテイク  idea
+- [ ] `wiki#305` アイモード風 掲示板  idea
+- [ ] `wiki#306` オントロジー§6判断: ACP統合で止めるかA2A委譲まで行くか  todo,P0
+- [ ] `wiki#307` dune導入再開: opam init -a --disable-sandboxing -y から  todo,P2
+- [ ] `wiki#308` sync-repos CLI再実装の要否判断（非Docker検証の結果次第）  todo,P1
+- [ ] `wiki#309` shizuka: ADR/設計ドキュメントの構造レビューと改善提案  todo,P1
+- [ ] `wiki#310` model-picker: タスク別の最適モデル選択とコスト分析レポート  todo,P2
+- [ ] `wiki#311` garden-agent: wikiの停滞検出と昇格提案を生成  todo,P2
+- [ ] `wiki#312` jade: ファイル整理タスクをワークフローで実行  todo,P2
+- [ ] `wiki#313` ACP統合検証: hermes acp で opencode/pi をクライアントから操作  todo,P1
+- [ ] `wiki#314` 速い/遅いルーティング実測: pi vs opencode × takt auto-strategy  todo,P1
+- [ ] `wiki#315` A2A最小PoC: a2a-pythonでAgent Card公開サーバー(vba-gas-adk-bridge)  todo,P2
+- [ ] `wiki#316` sync-repos: CLI再実装の言語比較レポート（Python/Go/Rust）  todo,P1
+- [ ] `wiki#317` sync-repos: 非Dockerパス動作検証(~/.local/bin/sync-repos)  todo,P0
+- [ ] `wiki#318` フラットなイシューを構造化したい：3Dグラフの比喩（クラスタリング＋疎結合＋分子間力）  
+- [ ] `wiki#319` auto-dj「0829LOFIてざわりNY」引き継ぎ：38曲DL全滅からの再開  
+- [ ] `yon-walk#2` 告知動画作成（Remotion）  epic,content
+- [ ] `yon-walk#3` 出展参加者管理  event
+- [ ] `yon-walk#4` 告知文ブラッシュアップ  content
+- [ ] `yon-walk#5` 神保町散歩イベント企画  kilo-duplicate,kilo-triaged,epic,content
+- [ ] `yon-walk#6` スケジュール管理  event
+- [ ] `yon-walk#7` 動画構成・台本作成  kilo-duplicate,kilo-triaged,content
+- [ ] `yon-walk#8` 神保町散歩ルート作成  kilo-duplicate,kilo-triaged,content
+- [ ] `yon-walk#9` おしゃれどろぼう出展対応  event
+- [ ] `yon-walk#10` オントロジー・アイデアベース  content
+- [ ] `yon-walk#11` TTS (Text-to-Speech) 実装  enhancement,feature
+- [ ] `yon-walk#12` 一筆書きルート確定 — タイムスリップ神保町  content
+- [ ] `yon-walk#13` ルート距離・徒歩速度・所要時間  content
+- [ ] `yon-walk#14` 「暗号」→「パズル」に文言を統一  enhancement
+- [ ] `yon-walk#15` カメラ撮影トリガーの実装  feature
+- [ ] `yon-walk#17` パズル内容を写真/観察ベースに変更  enhancement
+- [ ] `yon-walk#18` 位置情報をスポット付近でのみ起動するよう最適化  enhancement
+- [ ] `yon-walk-archive#1` TTS (Text-to-Speech) 実装  enhancement
+- [ ] `yosegaki-poc#1` [UI] Slot状態の可視化  ui / V1,UI
+- [ ] `yosegaki-poc#2` [UI] スロット回転アニメーション  ui / V1,UI
+- [ ] `yosegaki-poc#3` [UI] モバイルレスポンシブ対応  ui / V1,UI
+- [ ] `yosegaki-poc#4` [UI] フォント/カラー選択UI  ui / V1,UI
+- [ ] `yosegaki-poc#5` [UI] エラーハンドリング統一  ui / V1,UI
+- [ ] `yosegaki-poc#6` [UI] ボード管理UI改善  ui / V1,UI
+- [ ] `yosegaki-web#27` [Test] Verify iOS Safari hiddenInput.focus() works after review fix  test / P0
+- [ ] `yosegaki-web#30` [Test] Smoke test checklist for deployed yosegaki-web  test / P0
+- [ ] `yosegaki-web#33` [Setup] Configure SUPABASE_URL and SUPABASE_ANON_KEY secrets for CI/CD  setup / kilo-duplicate,kilo-triaged,setup-required,P0,deploy
+- [ ] `yosegaki-web#35` [Auth] Firebase Authentication 導入  auth / P0,V2,auth
+- [ ] `yosegaki-web#36` [Auth] サインアップ/サインインUI  auth / P0,V2,auth
+- [ ] `yosegaki-web#37` [Auth] ロールベースアクセス制御  auth / P0,V2,auth
+- [ ] `yosegaki-web#38` [Auth] セッション管理とトークンリフレッシュ  auth / P0,V2,auth
+- [ ] `yosegaki-web#39` [Auth] ソーシャルログイン (Google)  auth / P0,V2,auth
+- [ ] `yosegaki-web#40` [Auth] パスワードリセットフロー  auth / P0,V2,auth
+- [ ] `yotei-js#1` [Sheets] raw_posts / events スキーマ定義  sheets / spec,MVP
+- [ ] `yotei-js#2` [GAS] onFormSubmit トリガー → raw_posts 書込  gas / MVP,GAS
+- [ ] `yotei-js#3` [GAS] Gemini Flash パース — raw_posts → events 構造化  gas / MVP,GAS,AI
+- [ ] `yotei-js#4` [GAS] doGet — JSON / ICS 配信 API  gas / MVP,GAS,API
+- [ ] `yotei-js#5` [GAS] Google Calendar 同期 — 時間トリガー（毎日0時）  gas / MVP,GAS
+- [ ] `yotei-js#6` [GAS] 管理画面 Web App — 投稿確認・編集UI  gas / GAS,admin,kilo-duplicate,kilo-triaged
+- [ ] `yotei-js#7` [OCR] Cloud Vision API 統合 — 画像→テキスト抽出  ocr / GAS,OCR,future
+- [ ] `yotei-js#8` [CF] Vanilla JS 公開カレンダービュー  cf / future,frontend,CF
+- [ ] `yotei-js#9` [将来] Meta / Instagram webhook チャンネル追加  将来 / future,meta
+- [ ] `yotei-js#11` [SETUP] Sheets 初期化 — setupSheets() 実行  setup / MVP,setup
+- [ ] `yotei-js#12` [SETUP] スクリプトプロパティ設定  setup / MVP,setup
+- [ ] `yotei-js#13` [GAS] ウェブアプリとしてデプロイ  gas / MVP,GAS
+- [ ] `yotei-js#14` [GAS] syncCalendar 時間トリガー設定（毎日0時）  gas / MVP,GAS,kilo-duplicate,kilo-triaged
+- [ ] `yotei-js#15` [GChat] GCP Console — Chat API 有効化 + Bot URL 設定  gchat / MVP,gchat
+- [ ] `yotei-js#16` [TEST] サイドバー投稿 → Gemini 解析 → events 書込  test / MVP,test
+- [ ] `yotei-js#17` [TEST] ICS URL をカレンダーアプリで購読確認  test / MVP,test
+- [ ] `yotei-js#18` [Web] index.html の GAS URL 差し替え → Cloud Storage デプロイ  web / frontend,cloud-storage
+- [ ] `yotei-js#19` [GChat] PNG スクショ / URL 投稿 → イベント登録確認  gchat / gchat,test
+- [ ] `yotei-js#20` [CI/CD] GitHub Secrets 設定  ci/cd / setup,CI/CD
+- [ ] `yotei-js#21` [Agent] Gemini Agent — Issue に agent ラベルで自動実装  agent / CI/CD,agent
+- [ ] `yotei-js#22` 初期セットアップ: GAS デプロイ・シークレット・トリガー設定  kilo-duplicate,kilo-triaged
+- [ ] `yotei-js#23` おしゃれどろぼうAI — 全体設計 (EPIC)  enhancement
+- [ ] `yotei-js#24` GAS: charm列拡張 + プリパース分岐デプロイ  enhancement,MVP,GAS
+- [ ] `yotei-js#25` LINE Bot: Webhook + テキスト解析基盤 (Bun+Hono)  enhancement,MVP,AI,line,agent
+- [ ] `yotei-js#26` LINE Bot: Vision対応（画像→チラシ解析）  enhancement,AI,OCR,line,agent
+- [ ] `yotei-js#27` LINE Bot: 会話セッション管理 + 再質問フロー  enhancement,AI,line,agent
+- [ ] `yotei-js#28` LINE Bot: 位置情報対応  enhancement,line,agent
+- [ ] `yotei-js#29` LINE Bot: プロアクティブ通知（cron / フォローアップ）  enhancement,future,line,agent
+- [ ] `yotei-js#30` 運用: エラーハンドリング・監視・ログ整備  enhancement,setup
+- [ ] `yotei-js#31` 思い出手帳: URL入力 — リンク先を解析して自動取り込み  enhancement,AI
+- [ ] `yotei-js#32` 思い出手帳: フライヤーシール — 画像をイベントに貼り付け  enhancement,OCR,frontend
+- [ ] `yotei-js#33` 思い出手帳: 思い出フォト — イベント後に写真を貼る  enhancement,frontend
+- [ ] `yotei-js#34` 思い出手帳 EPIC: 思い出手帳 — シール・写真・URLで作る scrapbook  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `yotei-js#35` UIモック: 思い出手帳 — シール・フォト・scrapbook ビジョン  enhancement,kilo-duplicate,kilo-triaged,frontend
+- [ ] `yotei-js#36` 実装: URL解析 — リンク先をfetchしてGeminiに渡す  enhancement,AI,agent
+- [ ] `yotei-js#37` テスト: URL解析 E2E — /parse-url + techo.html 統合  enhancement,kilo-duplicate,kilo-triaged,test
+- [ ] `yotei-js#38` 統合: techo.html に全機能をマージ — 手帳・URL・シール・フォト  enhancement,kilo-duplicate,kilo-triaged,frontend
+- [ ] `yotei-js#39` yotei-ts 新設 — Cloudflare Pages + TypeScript + Vite (techo PWA 移植)  enhancement,frontend
+- [ ] `yotei-js#40` techo PWA 完了: 季節カラー・詳細モーダル・SW・manifest (b7eacce)  enhancement,frontend
+- [ ] `yotei-js#41` 忖度エージェント: プロンプト・Issue を DB 蓄積 → ML で意図学習  enhancement,AI,agent
+- [ ] `yotei-js#42` GAS コードを yotei-js に集約 (yotei-ts → yotei-js 移設)  
+- [ ] `yotei-js#43` CLASP セットアップ: TypeScript で GAS 開発  kilo-duplicate,kilo-triaged
+- [ ] `yotei-js#44` Google Workspace API 連携 (Calendar / Tasks / Sheets)  
+- [ ] `yotei-js#45` Google Workflows 連携: GAS のオーケストレーション  
+- [ ] `yotei-js#46` MCP Server: GAS エンドポイントを MCP tool として公開  
+- [ ] `yotei-js#47` PRD: PDM議論 + N1アンケート → PRD策定  
+- [ ] `yotei-ts#2` [Feature] マルチユーザー対応 — ユーザーID永続化と認証  feature / enhancement
+- [ ] `yotei-ts#3` [Feature] 入力UI単純化 — URLファーストの1-stepフロー  feature / enhancement
+- [ ] `yotei-ts#4` [Feature] LINEエージェント化 — DeepSeekでメッセージ解析・D1保存（画像入力なし）  feature / enhancement
+- [ ] `yotei-ts#5` [DevX] App.vueをコンポーネント分割 — 500行単一ファイル解消  devx / enhancement
+- [ ] `yotei-ts#6` [Security/DevX] GAS_API URLとAPIキーをハードコードから環境変数に移行  security/devx / enhancement
+- [ ] `yotei-ts#8` [CRITICAL] 認証機構ゼロ — マルチユーザー対応の基盤がない  critical / enhancement,priority-high,kilo-triaged,kilo-duplicate
+- [ ] `yotei-ts#9` [HIGH] App.vue 503行をコンポーネント分割する  high / refactor,kilo-triaged,kilo-duplicate
+- [ ] `yotei-ts#10` [HIGH] D1スキーマ改善: tags正規化・updated_at・論理削除  high / enhancement,database
+- [ ] `yotei-ts#11` [HIGH] イベントの編集・削除機能がない  high / enhancement,ux
+- [ ] `yotei-ts#12` [MEDIUM] 入力の単純化: 自然言語日付 + 音声入力 + クイックイベント  medium / enhancement,ux
+- [ ] `yotei-ts#13` [MEDIUM] エージェント化: MCPツール + DeepSeek統合 + LINE Bot本実装  medium / enhancement,agent
+- [ ] `yotei-ts#14` [MEDIUM] DevX改善: 型安全・テスト・リンター・dev環境  medium / enhancement,devx
+- [ ] `yotei-ts#15` [HIGH] UX改善: ローディング・エラー・空状態の実装  high / enhancement,ux
+- [ ] `yotei-ts#18` [FEATURE] 検索・フィルター機能がない — 目的の祭りに辿り着けない  feature / enhancement,ux
+- [ ] `yotei-ts#19` [FEATURE] 写真ライトボックス・ギャラリー体験がない  feature / enhancement,ux
+- [ ] `yotei-ts#20` [UX] 削除確認ダイアログと編集フローのUX改善  ux / enhancement,ux
+- [ ] `yotei-ts#21` [UX] 投稿後の迷子 — フィードバックと自分の投稿履歴がない  ux / enhancement,ux
+- [ ] `yotei-ts#22` [UX] 未来イベントにフォーカスできない — 過去の祭りが埋もれる  ux / enhancement,ux,kilo-triaged,kilo-duplicate
+- [ ] `yotei-ts#23` fix: LINE Bot webhookが403を返す  
+- [ ] `yotei-ts#24` [UX] 文字サイズを大きくする機能の追加  ux / ux
+- [ ] `yotei-ts#32` [UX] me.valueがページロードのたびランダム変化しユーザー同一性が保持されない  ux / ux
+- [ ] `yotei-ts#43` CI/WF テスト結果 — PR #42 (feat/d1-auth-search)  test-results
+- [ ] `yotei-ts#50` 既存 SPA ・ GAS 連携の整理  
+- [ ] `yotei-ts#51` Webcal API (GET /api/calendar.ics)  enhancement
+- [ ] `yotei-ts#53` データ更新方法: CLI / API 対応  
+- [ ] `yotei-ts#54` デプロイbyコミットID - /@<sha> リダイレクト実装  
+- [ ] `yotei-ts#55` D1マイグレーションをCI/CDで自動実行  
+- [ ] `yotei-ts#56` イベントカテゴリ/タグの視覚的改善（祭・フェス・ライブetc）  
+- [ ] `yotei-ts#57` Google Calendar との双方向同期  
+- [ ] `yotei-ts#58` LINE Bot からのイベント直接登録（BBS迂回ショートカット）  
+- [ ] `yotei-ts#59` カスタムドメイン設定  
+- [ ] `yotei-ts#60` イベント重複チェック・自動マージ  
+- [ ] `yotei-ts#61` GAS（Google Apps Script）の古いデータをD1にマイグレーション  kilo-triaged,kilo-duplicate
+- [ ] `yotei-ts#62` イベント情報の裏取り（検証）フェーズを追加  
+- [ ] `yotei-ts#63` LINE認証フロー改善: ログイン後の体験を明確に  kilo-triaged,kilo-duplicate,line,infra
+- [ ] `yotei-ts#64` ユーザーフィルタリング機能: /?u=<slug> で個人カレンダー  ux,d1
+- [ ] `yotei-ts#65` OpenAPI スキーマを現状のエンドポイントに合わせて更新  docs
+- [ ] `yotei-ts#67` Deploy-by-commit機能: /@<sha> で過去デプロイを参照  kilo-triaged,kilo-duplicate,infra
+- [ ] `yotei-ts#69` 個人カレンダーURLのUI実装  ux
+- [ ] `yotei-ts#70` Honoルート分割: モノリス [[path]].ts を routes/ に分割  hono
+- [ ] `yotei-ts#71` zod バリデーション導入: 全APIリクエストの型安全なバリデーション  hono
+- [ ] `yotei-ts#72` Hono RPC: 型安全なAPIクライアント (hono/client)  hono
+- [ ] `yotei-ts#73` Hono API ルートのユニットテスト実装  hono,testing
+- [ ] `yotei-ts#74` レート制限: Hono ミドルウェアでエンドポイント保護  hono
+- [ ] `yubizan#1` Initial setup: yubizan — finger multiplication teacher  
+- [ ] `zoo-catcher#1` Test Issue  
+- [ ] `zoo-catcher#2` Hand Tracking Integration  feature
+- [ ] `zoo-catcher#3` Micro:bit Communication Setup  microbit
+- [ ] `zoo-catcher#4` Scoring and Feedback System  enhancement
+- [ ] `zoo-catcher#5` Scoring and Feedback System  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `zoo-catcher#6` Scoring and Feedback System  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `zoo-catcher#7` Add kaichudentou.html feature  
+
+## ⚪ 保留 (248)
+- [ ] `GUM#4` 開発体制を考える  
+- [ ] `RainbowCube#1` キューブが生成されない  
+- [ ] `color-scheme-quiz#1` PayPay API環境変数をCloud Runに設定  enhancement
+- [ ] `color-scheme-quiz#3` ユニットテスト・結合テストの追加  enhancement
+- [ ] `color-scheme-quiz#4` GitHub ActionsワークフローをNode 24対応に更新  
+- [ ] `color-scheme-quiz#5` デザインルール策定 (design-rules.md)  enhancement
+- [ ] `color-scheme-quiz#6` ヒントトグル機能の追加  enhancement
+- [ ] `color-scheme-quiz#7` 日英トグル機能の追加  enhancement
+- [ ] `denkou-keijiban#4` ディスプレイフレームのサイズを2倍にする  enhancement
+- [ ] `denkou-keijiban#5` CSS用語定義と対訳のCSVを作成  documentation
+- [ ] `denkou-keijiban#6` アーティスト名パネルにラベルを追加  enhancement
+- [ ] `denkou-keijiban#7` デバッグパネルを出力層下段に固定し、ドラッグを層内のみに制限  enhancement
+- [ ] `denkou-keijiban#8` フッターの FULL リンクと KANBAN リンクを削除  enhancement
+- [ ] `denkou-keijiban#9` BBSパネルからCYCLEとCLEARボタンを削除  enhancement
+- [ ] `denkou-keijiban#10` メトリクス/統計表示パネルを追加  enhancement
+- [ ] `denkou-keijiban#11` 入力層にテキストエディタパネルを追加  enhancement
+- [ ] `denkou-keijiban#44` [RFC] 全体リファクタリング計画（コード構造 / API / デプロイメント / テスト）  rfc / enhancement
+- [ ] `denkou-keijiban#45` [Docs] DOM / UX フロー早見表（5 フロー × DOM→メソッド→値の受け渡し）  docs / enhancement
+- [ ] `denkou-keijiban#46` [ADR-001] ユニットテストランナー選定：Vitest vs Bun test  adr-001 / enhancement
+- [ ] `denkou-keijiban#47` [Docs] Claude Code CLI vs App 棲み分け（要点5個）  docs / enhancement
+- [ ] `dopeness#1` paneltree.mdとpanels.jsonの乖離 運用方法の検討  
+- [ ] `drop-audio#1` Phase 2: @audiomotion/studio プレビュー環境  enhancement
+- [ ] `drop-audio#2` Phase 3: MP3 エンコード & MIDI I/O  enhancement
+- [ ] `drop-audio#3` Phase 4: VSCode 拡張 & Remotion 統合  enhancement
+- [ ] `drop-audio#4` Phase 1: @audiomotion/core パッケージ基盤  enhancement
+- [ ] `drop-audio#5` Phase 1: BPM/tick 解決エンジン  enhancement
+- [ ] `drop-audio#6` Phase 1: CLI Renderer (WAV 出力)  enhancement
+- [ ] `drop-audio#7` Phase 2: <Sample> / <Synth> / <Effect> コンポーネント  enhancement
+- [ ] `fontgen#6` test  
+- [ ] `fontgen#8` Add Docker Compose documentation  
+- [ ] `fontgen#9` Add health checks to Docker containers  
+- [ ] `fontgen#10` Add .env.example for configuration  
+- [ ] `fontgen#11` Optimize Docker image sizes  
+- [ ] `fontgen#12` Add end-to-end test in GitHub Actions  
+- [ ] `fontgen#13` Push images to container registry  
+- [ ] `fontgen#14` Phase 1: PNG生成機能  
+- [ ] `fontgen#15` Phase 2: AIモデル統合  
+- [ ] `fontgen#16` Phase 3: 後処理品質改善  
+- [ ] `fontgen#17` Phase 4: Web API化  kilo-triaged,kilo-duplicate
+- [ ] `fontgen#18` Phase 5: 評価指標の追加  kilo-triaged,kilo-duplicate
+- [ ] `fontgen#19` Phase 6: CFF/OTF生成サポート  
+- [ ] `ikutsu#1` UI/UX: スマホ最適化・演出強化  
+- [ ] `kpi-agent#1` KPI スナップショット — 2026-06-07  kpi-report
+- [ ] `mudai-notepad-bbs#2` design: 操作は add + download のみ — delete / edit は存在しない  design
+- [ ] `mudai-notepad-bbs#4` chore: CI/CD — Firebase secrets を GitHub Actions に登録する必要あり  documentation
+- [ ] `oshareco-niji#1` Fix: NameError uninitialized constant ActiveSupport::ParameterFilter on Render  
+- [ ] `oshareco-niji#5` NEW ISSUE FOR TESTING  
+- [ ] `oshareco-niji#6` UX: ランダムに棚を閲覧できるホーム画面  
+- [ ] `oshareco-niji#7` UX: 画像から Discogs へ遷移できるレコードカード  
+- [ ] `oshareco-niji#8` UX: カメラ起動から Sakura VLM でテキスト解析  
+- [ ] `oshareco-niji#9` UX: Discogs 検索から新しい棚を登録するワークフロー  kilo-duplicate,kilo-triaged
+- [ ] `oshareco-niji#10` UX: LINE API を使ったユーザー認証  
+- [ ] `oshareco-niji#13` LINE Developersにログインできない  question,investigation
+- [ ] `oshareco-niji#15` LINE Login OAuth 実装  enhancement,kilo-duplicate,kilo-triaged
+- [ ] `oshareco-niji#16` 3枚撮影後にLINEログイン誘導 + 棚永続化（最大3棚）  enhancement
+- [ ] `oshareco-niji#17` Feature: Use Discogs API to fetch metadata and similar albums for each shelf record  enhancement,api
+- [ ] `plabber#2` feat: Filter::HTML2Text — html2text 連携フィルター  
+- [ ] `plabber#4` イベントプラットフォームの検索語を追加  enhancement
+- [ ] `plego#2` Filter plugins (HTML2Text, Deduped, etc.)  enhancement
+- [ ] `plego#3` Publish plugins (Gmail, GoogleDrive, etc.)  enhancement
+- [ ] `plego#4` Subscription plugins (Filesystem, GoogleDrive, RSS, etc.)  enhancement,kilo-triaged,kilo-duplicate
+- [ ] `plego#5` CI/CD workflow (Go test + build + release)  enhancement
+- [ ] `plego#6` Test suite (pipeline tests for each plugin type)  enhancement
+- [ ] `plego#7` Dockerfile / multi-stage build (static binary image)  enhancement
+- [ ] `plego#8` plego.example.yaml – document all plugin options  documentation
+- [ ] `plego#9` Codebase → OpenAPI → Spec pipeline  enhancement
+- [ ] `plego#10` Web UI dashboard  enhancement
+- [ ] `plego#11` Prometheus metrics for pipeline  enhancement
+- [ ] `plego#12` Subscription/Filter/Publish architecture refactor  enhancement
+- [ ] `plego#13` Phase1: plego-agent API Server (REST + WebSocket)  enhancement,phase1
+- [ ] `plego#14` Phase1: Next.js Frontend セットアップ (Vercel)  enhancement,phase1
+- [ ] `plego#15` Phase1: Vercel → GHA → Agent 起動フロー  enhancement,phase1
+- [ ] `plego#16` Phase2: Pipeline CRUD (GUI + API)  enhancement,phase2
+- [ ] `plego#17` Phase2: Pipeline 実行・ログストリーム  enhancement,phase2
+- [ ] `plego#18` Phase2: Plugin Marketplace 表示  enhancement,phase2
+- [ ] `plego#19` Phase3: Plugin Code Generator (テンプレート + AI)  enhancement,phase3
+- [ ] `plego#20` Phase3: AI 連携による Plugin コード生成  enhancement,kilo-triaged,kilo-duplicate,phase3
+- [ ] `plego#21` Phase3: 生成 Plugin の自動統合・commit  enhancement,phase3
+- [ ] `plego#22` Phase4: GitHub Deployer (commit → Pages 自動公開)  enhancement,phase4
+- [ ] `plego#23` Phase4: スケジュール管理・定期実行設定  enhancement,phase4
+- [ ] `plego#24` Phase2: OAuth 認証管理 (Gmail連携)  enhancement,phase2
+- [ ] `plego#25` Phase2: Preview Pane (iCal/JSON/メール プレビュー)  enhancement,phase2
+- [ ] `plego#26` Phase4: Agent 常駐モード (Fly.io/Railway デプロイ)  enhancement,phase4
+- [ ] `proxa-go#1` トークン管理MCPツール: スマホ→Docker完全フロー  enhancement
+- [ ] `proxa-go#2` Docker管理MCPツール  enhancement
+- [ ] `proxa-go#3` QR入出力MCPツール  enhancement
+- [ ] `proxa-go#4` Docker認証ベースイメージ (proxa-auth)  enhancement
+- [ ] `sf-autonomous-loop#1` [Contest] 星新一賞: 作品執筆 & 制作プロセス(AIログ)管理  contest
+- [ ] `sf-autonomous-loop#2` [Task] 星新一賞: SF作家ドーピング帽子  task
+- [ ] `shelves#1` Neon Postgres セットアップ & DB マイグレーション  setup,database
+- [ ] `shelves#2` Clerk 認証セットアップ（Google ログイン）  setup,auth
+- [ ] `shelves#3` Discogs API 連携 — アルバム検索・ジャケット取得  api,feature
+- [ ] `shelves#4` Last.fm API 連携 — アルバム検索・アートワーク取得  api,feature
+- [ ] `shelves#5` Stripe 決済 & プロプラン実装  feature,payments
+- [ ] `shelves#6` フォロー / いいね ソーシャル機能  feature,social
+- [ ] `shelves#7` Vercel デプロイ & 環境変数設定  devops,deployment
+- [ ] `shelves#9` ユーザープロフィールページ ( /u/[username] )  feature,social
+- [ ] `shelves#10` モバイル UI 最適化  ui,mobile
+- [ ] `shelves#11` Set up Stripe webhook  payments,stripe
+- [ ] `shelves#12` Add custom domain to App Hosting  deployment,domain
+- [ ] `shelves#13` Expand test coverage  enhancement,tests
+- [ ] `shelves#14` Create production Clerk instance  auth,deployment,clerk
+- [ ] `shelves#15` Set remaining Firebase secrets  deployment
+- [ ] `shinjuku-lunch#1` CI Failure: Frontend Tests (2026-06-10)  ci-failure,automated
+- [ ] `tokei#2` デザイン  
+- [ ] `unicode-mahjong#1` メタデータをインクルードする  
+- [ ] `unicode-mahjong#2` 評価基準をつくる  
+- [ ] `unicode-mahjong#3` プロンプトを改善する  
+- [ ] `unicode-mahjong#4` 投稿してもらう  
+- [ ] `voodoo-todo#1` Setup task management  
+- [ ] `voodoo-todo#2` 堺化学工業についてリサーチする  research,investigation
+- [ ] `voodoo-todo#3` Google Drive シンク機能の実装  feature,integration,google-drive
+- [ ] `voodoo-todo#4` チケットメタタグの検討・設計  design,metadata,spec
+- [ ] `voodoo-todo#5` 用語の柔軟な許容設計  design,ux,flexibility
+- [ ] `voodoo-todo#6` opencode, crush の API key 管理システム  infrastructure,security,api
+- [ ] `voodoo-todo#7` お得な AI API の調査・追加  research,api,cost-optimization
+- [ ] `voodoo-todo#8` voodoo agent の作成 — イシュー分析・推奨エージェント  agent,automation,ai,golang,gcp,llm
+- [ ] `voodoo-todo#9` 上尾でバイク取り — 6/13 予約  personal,deadline
+- [ ] `voodoo-todo#10` connpass マイクライアント開発  feature,api,client
+- [ ] `voodoo-todo#11` voodoo agent OpenAPI スキーマ定義  spec,api,openapi,kilo-duplicate,kilo-triaged
+- [ ] `voodoo-todo#12` voodoo-todo PRD / ADR / UX ドキュメント作成  documentation,design,spec
+- [ ] `voodoo-todo#13` Database 選定 ADR 作成  architecture,database,adr
+- [ ] `voodoo-todo#14` 2次データ処理・保存戦略 — バッチワークフロー設計  architecture,data-pipeline,etl
+- [ ] `voodoo-todo#15` トークンレス自律 ML モデル開発 — イシュー分析エンジン  research,ai,ml,autonomous
+- [ ] `voodoo-todo#16` 既存モデル調査 — Issue 分析機能 (Ollama 互換)  research,kilo-duplicate,kilo-triaged,ml,ollama,models
+- [ ] `voodoo-todo#17` インターフェース統一化 — 認知コスト最小化  integration,ux,input-method
+- [ ] `voodoo-todo#18` 不満・アイデア → プロダクトプロンプト変換スキル  ux,automation,skill,prompt-engineering
+- [ ] `voodoo-todo#19` voodoo-todo インタラクティブ作成 MCP サーバー  integration,kilo-duplicate,kilo-triaged,architecture,mcp,cli
+- [ ] `voodoo-todo#20` AI API プロバイダー総合リサーチ  research,infrastructure,api,cost-optimization
+- [ ] `voodoo-todo#21` voodoo クライアント設計 — 雑多 → 行動提案  ux,automation,client,kilo-duplicate,kilo-triaged,nlp
+- [ ] `voodoo-todo#22` GitHub ボット統合 — 自動化ワークフロー  automation,github,workflow
+- [ ] `voodoo-todo#23` Issue 最適化・管理戦略  kilo-duplicate,kilo-triaged,process,project-management,optimization
+- [ ] `voodoo-todo#24` モバイル Pages — スマホ入力 → LLM バッチ処理  ux,kilo-duplicate,kilo-triaged,workflow,frontend,mobile
+- [ ] `voodoo-todo#25` Issue 依存関係グラフ可視化（PC HTML）  frontend,visualization,html
+- [ ] `voodoo-todo#26` ML 基礎知識キャッチアップ（Issue #15 前提）  ml,learning,prerequisite,math
+- [ ] `voodoo-todo#27` Issue テキストファイル化 ADR — Google Drive 同期  adr,p2
+- [ ] `voodoo-todo#28` テスト戦略 — ユニット・統合・E2E  testing,quality
+- [ ] `voodoo-todo#29` CI/CD パイプライン — GitHub Actions  automation,devops,ci-cd
+- [ ] `voodoo-todo#30` dopeness-web 卒業イベント最終調整・デプロイ確認 (2026-06-06)  p0
+- [ ] `voodoo-todo#31` led-board / led-board-lite イベントモード完成・本番投入  p0
+- [ ] `voodoo-todo#32` suno MCP playwright ブラウザインストール (`playwright install chromium`)  p0
+- [ ] `voodoo-todo#33` task-crawler 定期実行 (Windows Scheduled Task 設定)  p0
+- [ ] `voodoo-todo#34` opencode 再起動して MCP14 が正しく起動するか確認  p0
+- [ ] `voodoo-todo#35` Match#play_turn 実装  p1
+- [ ] `voodoo-todo#36` Match#start 実装  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#37` SSEブロードキャスト統合  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#38` 観戦用HTMLテンプレート  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#39` 観戦用Web UI (HTML/CSS/JS)  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#40` 対戦リスト・詳細ページ  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#41` BBS永続化バックエンド (Neon/Supabase, 現状in-memory)  p1
+- [ ] `voodoo-todo#42` POST /api/message 統一 (JSON)  p1
+- [ ] `voodoo-todo#43` メッセージキュー + priority制御  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#44` GET /api/health  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#45` イベントモード切替・履歴保存・QR生成  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#46` 絵文字ピッカー・寄せ書きモード  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#47` IPレート制限・V2課金機能  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#48` Deploy: Railway/Vercel (ADR-003決定待ち)  p1
+- [ ] `voodoo-todo#49` URL hash入力, localStorage連携, 1 HTML完結  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#50` 重複UI削除 (LedBoardPage.tsx統合)  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#51` SAKURA_API_KEY → font-generator 16×16漢字  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#52` make_video.py パフォーマンス改善  p1
+- [ ] `voodoo-todo#53` issues (62件) の優先順位付けとP0/P1/P2分類  p1
+- [ ] `voodoo-todo#54` mastra yume2kanban エージェント本番運用開始  p1
+- [ ] `voodoo-todo#55` kanban.mandara 最新化  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#56` yumeya .kanban.issues 設計書クラスター整理  kilo-duplicate,kilo-triaged,p1
+- [ ] `voodoo-todo#57` DB→JSONエクスポート (MCPアクセス)  p1
+- [ ] `voodoo-todo#58` DBをHTML (WASM/SQL.js) で可視化  p1
+- [ ] `voodoo-todo#59` ユーザーペイン検出ツール  p1
+- [ ] `voodoo-todo#60` 投資機会判定アルゴリズム  p1
+- [ ] `voodoo-todo#61` othello-icon: 動的ゲーム定義フォーマット設計, Game Registry拡張, CLI/Web  p2
+- [ ] `voodoo-todo#62` othello-icon: ゲームデザインプロンプト, コンテストオーケストレーター  kilo-duplicate,kilo-triaged,p2
+- [ ] `voodoo-todo#63` othello-icon: Godot可視化, 勝率統計, リプレイ機能  kilo-duplicate,kilo-triaged,p2
+- [ ] `voodoo-todo#64` masurao: kanbanツール (analyze/suggest_improvement/record_waste/standup_report)  p2
+- [ ] `voodoo-todo#65` melon-sound: 共有基盤 (RingBuffer/VAD/STFT), Voice ID, 楽譜作成, WASAPI  p2
+- [ ] `voodoo-todo#66` jacket-eye-go: VLMモデル選定, 画面自動キャプチャ, melon-sound連携, Renderデプロイ  p2
+- [ ] `voodoo-todo#67` news-server: Perl+Plagger版検討, config.yaml, led-boardプロキシ経由確認  p2
+- [ ] `voodoo-todo#68` plego: Filter/Publish/Subscription プラグイン実装, CI/CD, Docker, テスト  p2
+- [ ] `voodoo-todo#69` baku-mcp: ファイル消失 → 再ビルド or 削除判断  p2
+- [ ] `voodoo-todo#70` eisenstein-mcp: 同上  kilo-duplicate,kilo-triaged,p2
+- [ ] `voodoo-todo#71` Drucker: MCP serve-mcp 有効化判断  p2
+- [ ] `voodoo-todo#72` BENKEI: benkey serve-mcp 有効化判断  kilo-duplicate,kilo-triaged,p2
+- [ ] `voodoo-todo#73` kanban.go のKANBAN.mdパーサー運用  p2
+- [ ] `voodoo-todo#74` coquille: TODO.md 全136タスクのP0/P1/P2分類 (LSP, AST, 統合 etc.)  p2
+- [ ] `voodoo-todo#75` wiki/raw 日報システム定着  p2
+- [ ] `voodoo-todo#76` kanban-viewer TUI 改善  p2
+- [ ] `voodoo-todo#77` Codex-local MCP登録: portman, llama-mcp, qwen-file-agent を opencode MCP に追加  p3
+- [ ] `voodoo-todo#78` proxa: Java環境整備して enable  p3
+- [ ] `voodoo-todo#79` tts-sakura MCP 有効化  p3
+- [ ] `voodoo-todo#80` local-llm MCP (llama.cpp経由) 有効化  p3
+- [ ] `voodoo-todo#81` pyper-llm MCP (WSL連携) 試運転  kilo-duplicate,kilo-triaged,p3
+- [ ] `voodoo-todo#82` 不要SQLite (.crush/ 等) 掃除  p3
+- [ ] `voodoo-todo#83` 各プロジェクト kanban.md の自動最新化CI/CD  p3
+- [ ] `voodoo-todo#84` クラウドバックアップサービス調査・契約  research,infrastructure,backup
+- [ ] `voodoo-todo#85` テキスト処理の最適化 — ローカル/ローコスト LLM 活用  llm,kilo-duplicate,kilo-triaged,optimization,cost-reduction
+- [ ] `voodoo-todo#86` LLM 振り分けルール — 優先度ベースの3段階クラス分け  kilo-duplicate,kilo-triaged,optimization,cost-control,routing
+- [ ] `voodoo-todo#87` Issue 数増加に伴うパフォーマンス対策  p2
+- [ ] `voodoo-todo#88` ADR: Issue コンパクション閾値の決定  documentation,spec,p2
+- [ ] `voodoo-todo#89` 週次レトロスペクティブエージェント (weekly-retro)  agent,automation,p1
+- [ ] `voodoo-todo#90` ADR: Agent 実行環境の整理 — ローカル vs クラウド  architecture,adr,p2
+- [ ] `voodoo-todo#91` ADR: voodoo-todo-agent.pages.dev の位置づけ  documentation,infrastructure,p2
+- [ ] `voodoo-todo#92` MVC 再構成: UI / DB / AGENT の整理  design,architecture,p2
+- [ ] `voodoo-todo#93` 全体アーキテクチャ見取り図 — Model/View/Controller  design,spec,kilo-duplicate,kilo-triaged,architecture,p2
+- [ ] `voodoo-todo#94` 🍺 お酒づくりゲーム企画：アクションパズル  game-design
+- [ ] `voodoo-todo#96` 宮原ランチ情報収集  research,p3
+- [ ] `voodoo-todo#97` VS Code エージェント：入力をイシュー化  agent,p1
+- [ ] `voodoo-todo#98` CLAUDE.md リファクタリング  documentation,p2
+- [ ] `voodoo-todo#99` ツール使用スコープの定義  spec,p2
+- [ ] `voodoo-todo#100` マルチクライアント計画  architecture,p2
+- [ ] `voodoo-todo#101` エージェント：イシュー リオーガナイズ  agent,p1
+- [ ] `wagashi-crush#9` B9: No pause or back button during gameplay  enhancement,medium
+- [ ] `wagashi-crush#10` B10: Maze-Maze fires too frequently (every 5 swaps)  enhancement,low
+- [ ] `wagashi-crush#11` B11: No end-of-game transition/feedback  enhancement,low
+- [ ] `wagashi-crush#14` B10: Maze-Maze fires too frequently (every 5 swaps)  enhancement,low,kilo-triaged,kilo-duplicate
+- [ ] `wagashi-crush#15` B11: No end-of-game transition/feedback  enhancement,low,kilo-triaged,kilo-duplicate
+- [ ] `wandb-draw#1` 画像をレビューしてコードを改善していく  
+- [ ] `wiki#3` [doc] ADR-001-language-selection  doc / doc
+- [ ] `wiki#4` [doc] ADR-002-github-backup  doc / doc
+- [ ] `wiki#5` [doc] MIGRATION-PLAN  doc / doc
+- [ ] `wiki#6` [doc] SCATTER-ANALYSIS  doc / doc
+- [ ] `wiki#7` [memory] MEMORY  memory / memory
+- [ ] `wiki#8` [memory] USER  memory / memory
+- [ ] `wiki#9` [doc] AGENTS  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#10` [doc] CLAUDE  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#11` [doc] novnc-evolution-plan  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#12` [doc] sql-poker-proposal  doc / doc
+- [ ] `wiki#13` [doc] 00-curriculum-map  doc / doc
+- [ ] `wiki#14` [doc] 00-curriculum-map_20260616  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#15` [doc] 02-lesson-01-52-text  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#16` [doc] 03-lesson-01-52-md  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#17` [doc] draft-lesson1  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#18` [doc] draft-lesson2  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#19` [doc] draft-lesson3  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `wiki#20` [memory] MEMORY  memory / memory,kilo-duplicate,kilo-triaged
+- [ ] `wiki#21` [memory] SOUL  memory / memory
+- [ ] `wiki#22` [memory] USER  memory / memory,kilo-duplicate,kilo-triaged
+- [ ] `wiki#23` [doc] README  doc / doc,kilo-duplicate,kilo-triaged
+- [ ] `yaqqle#1` feat: add json_key field to Column for JSON key mapping  enhancement
+- [ ] `yaqqle#2` feat: ALTER TABLE diff generation (YAML vs information_schema)  enhancement
+- [ ] `yaqqle#3` feat: generate JSON Schema output for frontend validation  enhancement
+- [ ] `yarukoto100#1` feat: dayplan.js — Sakura AI Engine 朝の計画生成  
+- [ ] `yarukoto100#2` feat: tui.js — plan モード + worklog  
+- [ ] `yarukoto100#3` feat: melon-chat kanban ecosystem 接続  
+- [ ] `yarukoto100#4` feat: tasque cards.json ブリッジ  
+- [ ] `yumeya#4` Stripe 決済システムの統合と Webhook 実装  enhancement
+- [ ] `yumeya#5` API バリデーションとテストコードの拡充  enhancement
+- [ ] `yumeya#6` Firebase Firestore 結合テストの実装  enhancement
+- [ ] `yumeya#7` Docker Compose を用いた結合テスト環境の構築  enhancement
+- [ ] `yumeya#8` DBバックアップ機能の実装（デバッグ用：jsonl, csv, sqlite）  enhancement
